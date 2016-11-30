@@ -1,1 +1,813 @@
-test world
+
+<!DOCTYPE html>
+<!--[if IE 9]>
+  <html lang="zh"
+      
+      xmlns:fb="http://ogp.me/ns/fb#"
+      class="ie ie9">
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="zh"
+      
+      xmlns:fb="http://ogp.me/ns/fb#">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <link href="https://a2.muscache.com/airbnb/static/packages/common_o2.1-95d643eef69139392786405865038db8.css" media="all" rel="stylesheet" type="text/css" />
+<link href="https://a0.muscache.com/airbnb/static/packages/common-db8164bdea39ec4b4d58c519c5d84a47.css" media="all" rel="stylesheet" type="text/css" />
+
+    <link href="https://a2.muscache.com/airbnb/static/referrals/referrals_new-b9d75d6c8582925c672b22c9da28453b.css" media="screen" rel="stylesheet" type="text/css" />
+
+    <script>
+
+      var sherlock_firstbyte = window.performance && window.performance.timing
+        ? window.performance.timing.responseStart
+        : Number(new Date());
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-2725447-1', 'auto', {allowLinker:true});
+ga('require', 'linker');
+ga('linker:autoLink', ['airbnb.']);
+  ga('require', 'displayfeatures');
+ga('send', 'pageview');
+
+</script>
+      <script>
+
+        window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(19),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{h?h-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(20),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,h=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(p){"stack"in p&&(t(12),t(11),"addEventListener"in window&&t(6),s.xhrWrappable&&t(13),u=!0)}c.on("fn-start",function(t,e,n){u&&(h+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&h>0&&(h-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){N++,S=y.hash,this[u]=Date.now()}function o(){N--,y.hash!==S&&i(0,!0);var t=Date.now();this[l]=~~this[l]+t-this[u],this[h]=t}function i(t,e){x.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=Date.now()})}var c="-start",s="-end",f="-body",u="fn"+c,h="fn"+s,p="cb"+c,d="cb"+s,l="jsTime",m="fetch",v="addEventListener",w=window,y=w.location;if(w[v]){var g=t(9),b=t(10),x=t(8),E=t(6),T=t(12),O=t(7),P=t(13),R=t("ee"),D=R.get("tracer");t(14),t("loader").features.spa=!0;var S,M=w[v],N=0;R.on(u,r),R.on(p,r),R.on(h,o),R.on(d,o),R.buffer([u,h,"xhr-done","xhr-resolved"]),E.buffer([u]),T.buffer(["setTimeout"+s,"clearTimeout"+c,u]),P.buffer([u,"new-xhr","open-xhr"+c]),O.buffer([m+c,m+"-done",m+f+c,m+f+s]),x.buffer(["newURL"]),g.buffer([u]),b.buffer(["propagate",p,d,"executor-err","resolve"+c]),D.buffer([u,"no-"+u]),a(P,"open-xhr"+c),a(R,"xhr-resolved"),a(R,"xhr-done"),a(O,m+c),a(O,m+"-done"),x.on("pushState-end",i),x.on("replaceState-end",i),M("hashchange",i,!0),M("load",i,!0),M("popstate",function(){i(0,N>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(12),c=t(11),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",h="bstResource",p="resource",d="-start",l="-end",m="fn"+d,v="fn"+l,w="bstTimer",y="pushState";t("loader").features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+d,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+l,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,h],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(21)(a),s=t("gos"),f=XMLHttpRequest,u="addEventListener",h="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=s(n,"nr@wrapped",function(){return c(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&c.inPlace(n,["handleEvent"],"fn-")}}),a.on(h+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(19);e.exports=o;var a=window,c="fetch-",s=c+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,h=a.Response,p=a.fetch,d="prototype";u&&h&&p&&(i(f,function(t,e){r(u[d],e,s),r(h[d],e,s)}),r(a,"fetch",c),o.on(c+"end",function(t,e){var n=this;e?e.clone().arrayBuffer().then(function(t){n.rxSize=t.byteLength,o.emit(c+"done",[null,e],n)}):o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(21)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("mutation"),o=t(21)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],10:[function(t,e,n){function r(t){var e=a.context(),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(21),a=t("ee").get("promise"),c=i(a),s=t(19),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.resolve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],11:[function(t,e,n){var r=t("ee").get("raf"),o=t(21)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],12:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(21)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",h="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+h),a.inPlace(window,[s],s+h),a.inPlace(window,[f,"clearImmediate"],f+h),i.on(s+u,r),i.on(c+u,o)},{}],13:[function(t,e,n){function r(t,e){h.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),h.inPlace(t,v,"fn-",c)}function i(t){w.push(t),l&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),h=t(21)(u),p=NREUM.o,d=p.XHR,l=p.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new d(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(d,y),y.prototype=d.prototype,h.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),l){var g=1,b=document.createTextNode(g);new l(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],14:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<h;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return l(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(15),f=t("ee"),u=["load","error","abort","timeout"],h=u.length,p=t("id"),d=t(18),l=t(17),m=window.XMLHttpRequest;a.features.xhr=!0,t(13),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,d&&(d>34||d<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=l(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<h;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],15:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],16:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(19),c=t(20),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],h="api-",p=h+"ixn-";a(u,function(t,e){f[e]=o(h+e,!0,"api")}),f.addPageAction=o(h+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(p+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],17:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],18:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],19:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],20:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],21:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(20),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){h([u,"",[r,a,o],c])}f(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(p){throw f(e+"err",[r,a,p],c),p}finally{f(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<n.length;s++)c=n[s],a=t[c],r(a)||(t[c]=e(a,f?c+o:o,i,c))}function f(e,n,r){if(!s){s=!0;try{t.emit(e,n,r)}catch(o){h([o,e,n,r])}s=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){h([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function h(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?c(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=p(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var u=f[v[n]];return u&&u.push([w,n,r,i]),i}function h(t,e){m[t]=p(t).concat(e)}function p(t){return m[t]||[]}function d(t){return u[t]=u[t]||o(n)}function l(t,e){s(t,function(t,n){e=e||"feature",v[n]=e,e in f||(f[e]=[])})}var m={},v={},w={on:h,emit:n,get:d,listeners:p,context:e,buffer:l};return w}function i(){return new r}var a="nr@context",c=t("gos"),s=t(19),f={},u={},h=e.exports=o();h.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!g++){var t=y.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(v,function(e,n){t[e]||(t[e]=n)});var n="https"===m.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",c("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(19),f=window,u=f.document,h="addEventListener",p="attachEvent",d=f.XMLHttpRequest,l=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(16);var m=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-974.min.js"},w=d&&l&&l[h]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:m,features:{},xhrWrappable:w};u[h]?(u[h]("DOMContentLoaded",i,!1),f[h]("load",r,!1)):(u[p]("onreadystatechange",o),f[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var g=0},{}]},{},["loader",2,14,5,3,4]);
+;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"fc09a36731",applicationID:"2237",sa:1}
+
+</script>
+    
+
+    <meta id="csrf-param-meta-tag" name="csrf-param" content="authenticity_token"/>
+    <meta id="csrf-token-meta-tag" name="csrf-token" content=""/>
+
+
+    <title>为您的第一趟旅程节省￥200！</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta id="english-canonical-url" content=""/>
+
+        <link rel="canonical" href="https://zh.airbnb.com/c/kchen801">
+          <link rel="alternate" href="https://es.airbnb.com/c/kchen801" hreflang="es">
+          <link rel="alternate" href="https://fr.airbnb.be/c/kchen801" hreflang="fr-BE">
+          <link rel="alternate" href="https://fr.airbnb.ca/c/kchen801" hreflang="fr-CA">
+          <link rel="alternate" href="https://fr.airbnb.ch/c/kchen801" hreflang="fr-CH">
+          <link rel="alternate" href="https://it.airbnb.ch/c/kchen801" hreflang="it-CH">
+          <link rel="alternate" href="https://th.airbnb.com/c/kchen801" hreflang="th">
+          <link rel="alternate" href="https://www.airbnb.ae/c/kchen801" hreflang="en-AE">
+          <link rel="alternate" href="https://www.airbnb.at/c/kchen801" hreflang="de-AT">
+          <link rel="alternate" href="https://www.airbnb.be/c/kchen801" hreflang="nl-BE">
+          <link rel="alternate" href="https://www.airbnb.ca/c/kchen801" hreflang="en-CA">
+          <link rel="alternate" href="https://www.airbnb.cat/c/kchen801" hreflang="ca">
+          <link rel="alternate" href="https://www.airbnb.ch/c/kchen801" hreflang="de-CH">
+          <link rel="alternate" href="https://www.airbnb.cl/c/kchen801" hreflang="es-CL">
+          <link rel="alternate" href="https://www.airbnb.co.cr/c/kchen801" hreflang="es-CR">
+          <link rel="alternate" href="https://www.airbnb.co.id/c/kchen801" hreflang="id">
+          <link rel="alternate" href="https://www.airbnb.co.in/c/kchen801" hreflang="en-IN">
+          <link rel="alternate" href="https://www.airbnb.co.kr/c/kchen801" hreflang="ko">
+          <link rel="alternate" href="https://www.airbnb.co.nz/c/kchen801" hreflang="en-NZ">
+          <link rel="alternate" href="https://www.airbnb.co.uk/c/kchen801" hreflang="en-GB">
+          <link rel="alternate" href="https://www.airbnb.co.ve/c/kchen801" hreflang="es-VE">
+          <link rel="alternate" href="https://www.airbnb.com/c/kchen801" hreflang="en">
+          <link rel="alternate" href="https://www.airbnb.com.ar/c/kchen801" hreflang="es-AR">
+          <link rel="alternate" href="https://www.airbnb.com.au/c/kchen801" hreflang="en-AU">
+          <link rel="alternate" href="https://www.airbnb.com.bo/c/kchen801" hreflang="es-BO">
+          <link rel="alternate" href="https://www.airbnb.com.br/c/kchen801" hreflang="pt">
+          <link rel="alternate" href="https://www.airbnb.com.bz/c/kchen801" hreflang="es-BZ">
+          <link rel="alternate" href="https://www.airbnb.com.co/c/kchen801" hreflang="es-CO">
+          <link rel="alternate" href="https://www.airbnb.com.ec/c/kchen801" hreflang="es-EC">
+          <link rel="alternate" href="https://www.airbnb.com.gt/c/kchen801" hreflang="es-GT">
+          <link rel="alternate" href="https://www.airbnb.com.hk/c/kchen801" hreflang="zh-HK">
+          <link rel="alternate" href="https://www.airbnb.com.hn/c/kchen801" hreflang="es-HN">
+          <link rel="alternate" href="https://www.airbnb.com.mt/c/kchen801" hreflang="en-MT">
+          <link rel="alternate" href="https://www.airbnb.com.my/c/kchen801" hreflang="ms">
+          <link rel="alternate" href="https://www.airbnb.com.ni/c/kchen801" hreflang="es-NI">
+          <link rel="alternate" href="https://www.airbnb.com.pa/c/kchen801" hreflang="es-PA">
+          <link rel="alternate" href="https://www.airbnb.com.pe/c/kchen801" hreflang="es-PE">
+          <link rel="alternate" href="https://www.airbnb.com.py/c/kchen801" hreflang="es-PY">
+          <link rel="alternate" href="https://www.airbnb.com.sg/c/kchen801" hreflang="en-SG">
+          <link rel="alternate" href="https://www.airbnb.com.sv/c/kchen801" hreflang="es-SV">
+          <link rel="alternate" href="https://www.airbnb.com.tr/c/kchen801" hreflang="tr">
+          <link rel="alternate" href="https://www.airbnb.com.tw/c/kchen801" hreflang="zh-TW">
+          <link rel="alternate" href="https://www.airbnb.cz/c/kchen801" hreflang="cs">
+          <link rel="alternate" href="https://www.airbnb.de/c/kchen801" hreflang="de">
+          <link rel="alternate" href="https://www.airbnb.dk/c/kchen801" hreflang="da">
+          <link rel="alternate" href="https://www.airbnb.es/c/kchen801" hreflang="es-ES">
+          <link rel="alternate" href="https://www.airbnb.fi/c/kchen801" hreflang="fi">
+          <link rel="alternate" href="https://www.airbnb.fr/c/kchen801" hreflang="fr">
+          <link rel="alternate" href="https://www.airbnb.gr/c/kchen801" hreflang="el">
+          <link rel="alternate" href="https://www.airbnb.gy/c/kchen801" hreflang="en-GY">
+          <link rel="alternate" href="https://www.airbnb.hu/c/kchen801" hreflang="hu">
+          <link rel="alternate" href="https://www.airbnb.ie/c/kchen801" hreflang="en-IE">
+          <link rel="alternate" href="https://www.airbnb.is/c/kchen801" hreflang="is">
+          <link rel="alternate" href="https://www.airbnb.it/c/kchen801" hreflang="it">
+          <link rel="alternate" href="https://www.airbnb.jp/c/kchen801" hreflang="ja">
+          <link rel="alternate" href="https://www.airbnb.mx/c/kchen801" hreflang="es-MX">
+          <link rel="alternate" href="https://www.airbnb.nl/c/kchen801" hreflang="nl">
+          <link rel="alternate" href="https://www.airbnb.no/c/kchen801" hreflang="no">
+          <link rel="alternate" href="https://www.airbnb.pl/c/kchen801" hreflang="pl">
+          <link rel="alternate" href="https://www.airbnb.pt/c/kchen801" hreflang="pt-PT">
+          <link rel="alternate" href="https://www.airbnb.ru/c/kchen801" hreflang="ru">
+          <link rel="alternate" href="https://www.airbnb.se/c/kchen801" hreflang="sv">
+          <link rel="alternate" href="https://zh.airbnb.com/c/kchen801" hreflang="zh">
+
+
+      <meta name="description" content="和Kun一样，使用Airbnb去世界各地探索超过100万个地方。">
+
+
+
+      <meta name="robots" content="noindex">
+
+      <meta property="fb:app_id" content="138566025676">
+      <meta property="og:site_name" content="Airbnb">
+      <meta property="og:title" content="为您的第一趟旅程节省￥200！">
+      <meta property="og:description" content="和Kun一样，使用Airbnb去世界各地探索超过100万个地方。">
+      <meta property="og:image" content="https://a1.muscache.com/airbnb/static/social_media/world-map-f1319c28213aa3d8e3010e3e8c423907.png">
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="630">
+      <meta property="og:url" content="https://zh.airbnb.com/c/kchen801">
+      <meta property="og:locale" content="zh_CN">
+
+    <meta name="twitter:widgets:csp" content="on">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="为您的第一趟旅程节省￥200！">
+        <meta name="twitter:description" content="和Kun一样，使用Airbnb去世界各地探索超过100万个地方。">
+        <meta name="twitter:image" content="https://a1.muscache.com/airbnb/static/social_media/world-map-f1319c28213aa3d8e3010e3e8c423907.png">
+        <meta name="twitter:image:width" content="1200">
+        <meta name="twitter:image:height" content="630">
+        <meta name="twitter:site" content="@airbnb">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="image_src" href="https://a2.muscache.com/airbnb/static/logos/trips-og-200x200-a3be4fbbb3b6c5e758804438dea35adc.jpg">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Airbnb">
+
+    <!--[if lte IE 9]>
+      <script src="https://a0.muscache.com/airbnb/static/packages/libs_ie_support.bundle-04fd9d43fd826f843173.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <link rel="manifest" href="/manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Airbnb">
+    <meta name="apple-mobile-web-app-title" content="Airbnb">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-navbutton-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/?utm_source=homescreen">
+
+
+    <link rel="apple-touch-icon" href="https://a0.muscache.com/airbnb/static/icons/apple-touch-icon-76x76-3b313d93b1b5823293524b9764352ac9.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="https://a0.muscache.com/airbnb/static/icons/apple-touch-icon-76x76-3b313d93b1b5823293524b9764352ac9.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="https://a1.muscache.com/airbnb/static/icons/apple-touch-icon-120x120-52b1adb4fe3a8f825fc4b143de12ea4b.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="https://a0.muscache.com/airbnb/static/icons/apple-touch-icon-152x152-7b7c6444b63d8b6ebad9dae7169e5ed6.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://a2.muscache.com/airbnb/static/icons/apple-touch-icon-180x180-bcbe0e3960cd084eb8eaf1353cf3c730.png" />
+<link rel="icon" sizes="192x192" href="https://a1.muscache.com/airbnb/static/icons/android-icon-192x192-c0465f9f0380893768972a31a614b670.png" />
+<link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="https://a1.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico" />
+
+
+  </head>
+  <body class="with-new-header has-epcot-header">
+    <a class="screen-reader-only screen-reader-only-focusable skip-to-content"
+       data-hook="skip-to-content"
+       href="#site-content">
+      跳至内容
+    </a>
+
+    <span class="screen-reader-only">
+      Airbnb
+    </span>
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-46MK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+
+
+      <div class="smart-banner" aria-hidden="true"></div>
+
+      <div id="header-filler"> </div>
+<div
+  id="header"
+  class="airbnb-header new  "
+>
+  <div class="header--sm show-sm clearfix" aria-hidden="true">
+  <a href="#"
+    aria-label="首页"
+    data-prevent-default
+    class="link-reset burger--sm">
+    <i class="icon icon-airbnb-alt show-login pull-left"></i>
+    <i class="icon icon-chevron-small icon-chevron-down icon-black pull-left"></i>
+    <span class="screen-reader-only">
+      Airbnb
+    </span>
+  </a>
+  <div class="title--sm text-center">
+      <button
+      class="btn btn-block search-btn--sm search-modal-trigger "
+      style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+          <div id="icon-drawer-search"></div>
+          <span class="search-placeholder--sm">
+            搜索
+          </span>
+      </button>
+      <a href="/" class="header-belo hide">
+        <span class="screen-reader-only">
+          Airbnb
+        </span>
+      </a>
+  </div>
+  <div class="action--sm"></div>
+  <div class="nav-animate-cover"></div>
+  <nav class="nav--sm" role="navigation"></nav>
+  <div class="search-modal-container"></div>
+</div>
+
+
+
+  <header class="regular-header clearfix hide-sm" id="new-header" role="banner">
+
+    
+<div class="comp pull-left">
+  <a
+    href="/"
+    class="hdr-btn link-reset belo-container"
+    aria-label="Airbnb"
+  >
+    <i class="icon icon-pos--lower  icon-airbnb-alt h2 show-login"></i>
+    <i class="icon icon-pos--lower  icon-airbnb show-logout"></i>
+  </a>
+</div>
+
+
+    
+<div class="comp pull-right show-login">
+  <a class="no-crawl hdr-btn link-reset header-avatar-trigger needsclick"
+     rel="nofollow"
+     href="#"
+     data-href="/dashboard"
+     data-href-host="/trips">
+    <span class="value_name margin-right--tiny hide-md"></span>
+    <div class="media-photo media-round user-profile-image header-icon icon-profile-alt-gray"></div>
+  </a>
+
+  <div class="panel tooltip-top-right drop-down-menu avatar-tooltip--new">
+        <div class="js-your-trips-item panel-body link-reset hover-item no-crawl" data-href="/trips">
+          <div class="hover-item__content">
+            您的旅程
+          </div>
+        </div>
+        <a href="/city-hosts?source=hdr" class="hide city-host-button-md panel-body link-reset hover-item">
+          <div class="hover-item__content">
+            City Hosts 
+              <img class="beta-badge" src="https://a0.muscache.com/airbnb/static/magical_trips/guest/beta-badge-56a0d5bc185adfe79992a46991964070.png" alt="Beta" height="18" />
+          </div>
+</a>        <div class="js-wishlists-item panel-body link-reset hover-item no-crawl" data-href="/wishlists/my">
+          <div class="hover-item__content">
+            心愿单
+          </div>
+        </div>
+        <div class=" panel-body link-reset hover-item no-crawl" data-href="/users/edit">
+          <div class="hover-item__content">
+            编辑个人资料
+          </div>
+        </div>
+        <a href="/invite?r=3" class="travel-credit-item panel-body link-reset hover-item">
+          <div class="hover-item__content">
+            好友邀请
+          </div>
+</a>        <a href="/gift?s=nav" class="gift-card-item panel-body link-reset hover-item">
+          <div class="hover-item__content">
+            礼品卡
+          </div>
+</a>        <div class=" panel-body link-reset hover-item no-crawl" data-href="/users/notifications">
+          <div class="hover-item__content">
+            帐号设置
+          </div>
+        </div>
+        <a href="/business-travel?s=nav" class="business-travel  panel-body link-reset hover-item">
+          <div class="hover-item__content">
+            商务差旅
+          </div>
+</a>        <a href="/things-to-do" class="js-guidebook-item panel-body link-reset hover-item">
+          <div class="hover-item__content">
+            我的指南
+          </div>
+</a>        <div class=" panel-body link-reset hover-item no-crawl" data-href="/logout">
+          <div class="hover-item__content">
+            退出
+          </div>
+        </div>
+  </div>
+</div>
+
+
+  <div class="comp pull-right show-logout">
+  <a data-login-modal=""
+     href="/login"
+     data-redirect="redirect_params[action]=tell_a_friend&amp;redirect_params[code]=kchen801&amp;redirect_params[controller]=referrals&amp;redirect_params[s]=10"
+     class="hdr-btn link-reset">
+    登录
+  </a>
+</div>
+<div class="comp pull-right show-logout">
+  <a data-signup-modal="" data-header-view="true"
+     href="/signup_login"
+     data-redirect="redirect_params[action]=tell_a_friend&amp;redirect_params[code]=kchen801&amp;redirect_params[controller]=referrals&amp;redirect_params[s]=10"
+     class="hdr-btn link-reset">
+    注册
+  </a>
+</div>
+
+
+  
+<div class="comp pull-right show-travel-credit js-travel-credit-menu-container hide">
+  <a class="needsclick no-crawl hdr-btn link-reset js-travel-credit-comp"
+     href="/invite?r=3"
+     rel="nofollow"
+     data-href="/invite?r=3">
+    <div class="gift-icon-container text-center">
+      <span class="margin-right--tiny">旅行基金</span>
+      <i class="header-icon js-travel-credit-icon icon-gift-alt-gray">
+        <i class="alert-count js-travel-credit-unread-count text-center fade in">1</i>
+      </i>
+    </div>
+  </a>
+
+  <div class="panel  drop-down-menu travel-credit-dropdown"></div>
+</div>
+
+
+    
+<div id="js-header-help-menu">
+  <div class="comp pull-right help-trigger-wrapper no-border background-light-gray ">
+    <a class="hdr-btn js-help-toggle link-reset needsclick"
+       href="/help">
+      <span class="margin-right--tiny">帮助</span>
+      <i class="header-icon icon-lifesaver-alt-gray"></i>
+    </a>
+  </div>
+</div>
+
+
+  
+<div class="hide js-header-business-travel comp pull-right background-light-gray">
+  <a class="hdr-btn link-reset needsclick"
+     href="/business/dashboard?s=nav">
+    <span class="margin-right--tiny hide-md">商务</span>
+    <i class="header-icon js-business-travel-icon icon-business-travel-gray"></i>
+  </a>
+</div>
+
+
+    
+<div class="comp pull-right show-login">
+  <a class="needsclick no-crawl hdr-btn link-reset js-inbox-comp message-link"
+     href="#"
+     data-href="/inbox"
+     rel="nofollow">
+    <div class="inbox-icon-container text-center">
+      <span class="margin-right--tiny message-text-container">消息</span>
+        <i class="alert-count unread-count text-center fade">0</i>
+    </div>
+  </a>
+
+  <div class="panel tooltip-top-right drop-down-menu notifications-dropdown hide">
+  </div>
+</div>
+
+    
+<div class="comp pull-right show-trips show-login js-trips-menu-container hide">
+  <a class="needsclick no-crawl hdr-btn link-reset js-trips-comp trips-comp"
+     href="#"
+     rel="nofollow"
+     data-href="/trips">
+    <div class="inbox-icon-container text-center">
+      <span class="margin-right--tiny trip-text-container">旅程</span>
+        <i class="alert-count js-trips-unread-count text-center fade">0</i>
+    </div>
+  </a>
+
+  <div class="panel tooltip-top-right drop-down-menu dark-caret trips-dropdown hide">
+  </div>
+</div>
+
+    
+<div class="comp pull-right show-host">
+  <a class="needsclick host-icon-wrapper no-crawl hdr-btn link-reset js-host-menu-icon"
+     href="#"
+     rel="nofollow"
+     data-href="/dashboard">
+    <span class="margin-right--tiny host-text-container">
+      房东
+    </span>
+        <i class="alert-count js-host-item-count listing-count text-center fade">0</i>
+  </a>
+
+  <div class="panel tooltip-top-right drop-down-menu host-tooltip--new">
+    <div class="hover-item panel-body relist-your-space hide">
+      <a href="#" class="link-reset click-area">
+        <div class="cta-container va-container va-container-v" >
+          <div class="va-middle">
+            <div class="cta-text">
+              完成您的房源发布
+            </div>
+            <div class="cta-text-v3-reactivate hide">
+              重新激活
+            </div>
+            <div class="progress">
+              <div class="progress-bar" >
+              </div>
+            </div>
+          </div>
+        </div>
+</a>    </div>
+
+        <div class=" panel-body link-reset hover-item origin-item js-host-dashboard-link no-crawl" data-href="/dashboard">
+          <div class="hover-item__content">
+            控制面板
+            <i class="alert-count js-pending-request-count--inline text-center fade">0</i>
+          </div>
+        </div>
+        <div class=" panel-body link-reset hover-item origin-item js-host-stats-link no-crawl" data-href="/stats">
+          <div class="hover-item__content">
+            统计数据
+            
+          </div>
+        </div>
+        <div class=" panel-body link-reset hover-item origin-item js-host-calendar-link hide no-crawl" data-href="/rooms">
+          <div class="hover-item__content">
+            日历
+            
+          </div>
+        </div>
+        <div class=" panel-body link-reset hover-item origin-item js-host-manage-listings-link no-crawl" data-href="/rooms">
+          <div class="hover-item__content">
+            管理房源
+            <i class="alert-count listing-count listing-count--inline text-center fade">0</i>
+          </div>
+        </div>
+        <a href="/rooms/new" class=" panel-body link-reset hover-item origin-item js-host-list-your-space-link">
+          <div class="hover-item__content">
+            发布空间
+            
+          </div>
+</a>        <div class=" panel-body link-reset hover-item origin-item js-host-my-reservations-link no-crawl" data-href="/my_reservations">
+          <div class="hover-item__content">
+            您的预订
+            
+          </div>
+        </div>
+        <div class=" panel-body link-reset hover-item origin-item js-host-transaction-history-link no-crawl" data-href="/users/transaction_history">
+          <div class="hover-item__content">
+            交易记录
+            
+          </div>
+        </div>
+        <div class=" panel-body link-reset hover-item origin-item hide item-refer-hosts js-host-refer-hosts-link no-crawl" data-href="/refer?r=41">
+          <div class="hover-item__content">
+            邀请房东
+            <span class="label label-pink label-new">New</span>
+          </div>
+        </div>
+        <div class=" panel-body link-reset hover-item origin-item js-host-reviews-link no-crawl" data-href="/users/reviews">
+          <div class="hover-item__content">
+            评价
+            
+          </div>
+        </div>
+        <div class=" panel-body link-reset hover-item origin-item hide item-host-assist js-host-assist-link no-crawl" data-href="/host-assist">
+          <div class="hover-item__content">
+            房东助手
+            
+          </div>
+        </div>
+        <a href="/hospitality" class=" panel-body link-reset hover-item origin-item js-host-hospitality-link">
+          <div class="hover-item__content">
+            好客之道
+            
+          </div>
+</a>        <a href="/experience-host" class=" panel-body link-reset hover-item origin-item hide js-host-experience-host-link">
+          <div class="hover-item__content">
+            Experience Hosting
+            <span class="label label-pink label-new">New</span>
+          </div>
+</a>  </div>
+</div>
+
+      
+<div class='comp pull-right show-qr-codes'>
+  <a class='no-crawl hdr-btn link-reset'>
+    <span class='hide-md margin-right--tiny'>
+      手机端
+    </span>
+    <i class='header-icon icon-phone-gray'></i>
+    <div class='panel drop-down-menu qr-codes-dropdown'>
+      <div class='qr-code-container app-download'>
+        <img
+          class='qr-code'
+          src="https://a1.muscache.com/airbnb/static/wechat/download_app_other-2216c06ab35e39238e40720ed9bf1439.png"
+          width='150'
+          height='150'
+        ></img>
+        <div class='title'>
+          下载手机客户端
+        </div>
+      </div>
+      <div class='qr-code-container wechat'>
+        <img
+          class='qr-code'
+          src="https://a0.muscache.com/airbnb/static/wechat/service_account_qr_code_header_other-9291205a414d3af6b492e99d4a0b21e4.png"
+          width='150'
+          height='150'
+        ></img>
+        <div class='title'>
+          关注微信服务号
+        </div>
+        <div class=''>
+          id：AirbnbOfficial
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+    
+<div class="comp pull-right city-host-button hide">
+  <a class="hdr-btn link-reset js-host-menu-icon city-host-icon-wrapper"
+    href="/city-hosts?source=hdr"
+  >
+    <div>
+      <span>City Hosts</span>
+      <img class="beta-badge" src="https://a0.muscache.com/airbnb/static/magical_trips/guest/beta-badge-56a0d5bc185adfe79992a46991964070.png" alt="Beta" height="15" />
+    </div>
+  </a>
+</div>
+
+
+  <div class="comp pull-right not-launched comp-hire-a-host">
+  <a class="hdr-btn link-reset lys-link hire-a-host-link"
+     href="/co-hosting?ref=header_button">
+    <span class="btn btn-small btn-hire-a-host" />
+  </a>
+  <div class="panel  drop-down-menu hire-a-host-dropdown">
+    <p class="panel-body">
+      <a class="link-reset hire-a-host-tooltip" href="/co-hosting?ref=header_button">
+        Tooltip content!
+      </a>
+    </p>
+  </div>
+</div>
+
+  
+<div class="comp pull-right hide-host comp-become-a-host ">
+  <a class="hdr-btn link-reset lys-link js-become-a-host-link comp-become-a-host__link"
+     href="/host">
+    <span class="btn btn-small btn-become-a-host">
+      成为房东
+      <i class="icon icon-gift icon-host-referral-gift js-host-referral-gift-icon hide "></i>
+    </span>
+  </a>
+  <div class="panel tooltip-top-right drop-down-menu hide js-become-a-host-dropdown">
+    <a class="link-reset panel-body hover-item hide js-become-a-host-lys" href="/become-a-host?from_nav=1&link=2">
+      <div class="hover-item__content">
+        发布空间
+      </div>
+    </a>
+    <a class="link-reset js-become-a-host-tooltip panel-body hover-item" href="/rooms/new?from_nav=1&link=3">
+      <div class="tooltip-content">
+        成为房东
+      </div>
+    </a>
+    <a class="link-reset panel-body hover-item js-become-a-host-why-host hide" href="/host?from_nav=1">
+      <div class="hover-item__content">
+        如何出租房源
+      </div>
+    </a>
+  </div>
+</div>
+
+
+      <div class="comp pull-left back-to-search-results-wrapper">
+</div>
+
+        <div class="comp search-bar-wrapper" role="search">
+    <form action="/s" class="search-form">
+      <div class="search-bar">
+        <i class="header-icon icon-search-alt-gray search-icon"></i>
+        <input type="search"
+          placeholder="搜索"
+          autocomplete="off"
+          name="location"
+          data-date-placeholder="年-月-日"
+          class="location"
+        />
+        <input type="hidden" name="source" value="hdr" />
+      </div>
+    </form>
+  </div>
+
+
+</header>
+
+
+</div>
+
+
+    <noscript>
+    <div class="alert alert-with-icon alert-error  no-js-alert"
+     >
+  <i class="icon alert-icon icon-alert-alt"></i>
+  
+      很抱歉，如果不启用JavaScript，Airbnb网站的某些功能会无法正常使用。
+
+</div>
+</noscript>
+
+
+
+      
+<meta content="{&quot;flags&quot;:{&quot;name&quot;:&quot;flags&quot;,&quot;value&quot;:{&quot;this_bit_is_available&quot;:2,&quot;can_see_community_links&quot;:4,&quot;has_new_notifications&quot;:8,&quot;og_publish&quot;:16,&quot;is_business_travel_verified&quot;:32,&quot;update_cached&quot;:64,&quot;revert_to_admin&quot;:128,&quot;facebook_connected&quot;:256,&quot;erf_trebuchet_log&quot;:512,&quot;has_search&quot;:1024,&quot;search_help_dropdown&quot;:2048,&quot;has_dates&quot;:4096,&quot;has_acpt_resv_as_gst&quot;:8192,&quot;has_current_guest_resv&quot;:16384,&quot;can_send_profile_messages&quot;:32768,&quot;just_logged_in&quot;:65536,&quot;has_been_host&quot;:131072,&quot;should_drop_pellet&quot;:262144,&quot;field_guide_preload&quot;:524288,&quot;is_active_host&quot;:1048576,&quot;is_business_travel_manager&quot;:2097152,&quot;debugging_mode&quot;:4194304,&quot;is_host_referral_nav_bar_link_enabled&quot;:8388608,&quot;should_show_host_header&quot;:16777216,&quot;has_new_notifications_v4&quot;:33554432,&quot;is_vr_platform_powered_host&quot;:67108864,&quot;can_see_meetups&quot;:134217728,&quot;should_drop_sift_pellet&quot;:268435456,&quot;can_see_groups&quot;:536870912,&quot;has_verified_phone&quot;:1073741824,&quot;has_profile_pic&quot;:2147483648}},&quot;roles&quot;:{&quot;name&quot;:&quot;roles&quot;,&quot;value&quot;:{&quot;is_content_manager&quot;:1048576,&quot;is_stats_admin&quot;:16777216}},&quot;user_attributes&quot;:{&quot;name&quot;:&quot;_user_attributes&quot;}}" id="_bootstrap-user-attr-cookies" />
+<meta content="{&quot;engagement_overlay_modal&quot;:{&quot;subject&quot;:&quot;bev&quot;,&quot;buckets&quot;:100,&quot;percent_exposed&quot;:100,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:50},{&quot;name&quot;:&quot;overlay_img6&quot;,&quot;buckets&quot;:10},{&quot;name&quot;:&quot;overlay_img7&quot;,&quot;buckets&quot;:20},{&quot;name&quot;:&quot;overlay_img9&quot;,&quot;buckets&quot;:20}],&quot;hashing_key&quot;:&quot;engagement_overlay_modal&quot;,&quot;holdout_name&quot;:null},&quot;signup_form_disable_submit&quot;:{&quot;subject&quot;:&quot;visitor&quot;,&quot;buckets&quot;:2,&quot;percent_exposed&quot;:100,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:1},{&quot;name&quot;:&quot;disable_button&quot;,&quot;buckets&quot;:1}],&quot;hashing_key&quot;:&quot;signup_form_disable_submit&quot;,&quot;holdout_name&quot;:null},&quot;phone_verification_country_code_selector&quot;:{&quot;subject&quot;:&quot;user&quot;,&quot;buckets&quot;:2,&quot;percent_exposed&quot;:100,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:1},{&quot;name&quot;:&quot;country_select&quot;,&quot;buckets&quot;:1}],&quot;hashing_key&quot;:&quot;phone_verification_country_code_selector&quot;,&quot;holdout_name&quot;:null},&quot;referrals_signup_promo_panel&quot;:{&quot;subject&quot;:&quot;user&quot;,&quot;buckets&quot;:2,&quot;percent_exposed&quot;:100,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:1},{&quot;name&quot;:&quot;treatment&quot;,&quot;buckets&quot;:1}],&quot;hashing_key&quot;:&quot;referrals_signup_promo_panel&quot;,&quot;holdout_name&quot;:null},&quot;sem_existing_user_cannibalization_test&quot;:{&quot;subject&quot;:&quot;user&quot;,&quot;buckets&quot;:100,&quot;percent_exposed&quot;:100,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:80},{&quot;name&quot;:&quot;no_search_ads&quot;,&quot;buckets&quot;:20}],&quot;hashing_key&quot;:&quot;sem_existing_user_cannibalization_test&quot;,&quot;holdout_name&quot;:null},&quot;px_help_panel_feedback_link&quot;:{&quot;subject&quot;:&quot;bev&quot;,&quot;buckets&quot;:2,&quot;percent_exposed&quot;:100,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:1},{&quot;name&quot;:&quot;show_link&quot;,&quot;buckets&quot;:1}],&quot;hashing_key&quot;:&quot;px_help_panel_feedback_link&quot;,&quot;holdout_name&quot;:null},&quot;engagement_first_visit_survey_with_moweb&quot;:{&quot;subject&quot;:&quot;bev&quot;,&quot;buckets&quot;:100,&quot;percent_exposed&quot;:100,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:95},{&quot;name&quot;:&quot;survey&quot;,&quot;buckets&quot;:5}],&quot;hashing_key&quot;:&quot;engagement_first_visit_survey_with_moweb&quot;,&quot;holdout_name&quot;:null},&quot;monorail_referrals_tab_text_v3&quot;:{&quot;subject&quot;:&quot;user&quot;,&quot;buckets&quot;:4,&quot;percent_exposed&quot;:100,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:1},{&quot;name&quot;:&quot;treatment1_invite_friends&quot;,&quot;buckets&quot;:1},{&quot;name&quot;:&quot;treatment2_refer_a_friend&quot;,&quot;buckets&quot;:1},{&quot;name&quot;:&quot;treatment3_referrals&quot;,&quot;buckets&quot;:1}],&quot;hashing_key&quot;:&quot;monorail_referrals_tab_text_v3&quot;,&quot;holdout_name&quot;:null},&quot;react_sm_search_modal_v3&quot;:{&quot;subject&quot;:&quot;bev&quot;,&quot;buckets&quot;:2,&quot;percent_exposed&quot;:100,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:1},{&quot;name&quot;:&quot;treatment&quot;,&quot;buckets&quot;:1}],&quot;hashing_key&quot;:&quot;react_sm_search_modal_v3&quot;,&quot;holdout_name&quot;:null},&quot;sm_preload_latest_search&quot;:{&quot;subject&quot;:&quot;bev&quot;,&quot;buckets&quot;:2,&quot;percent_exposed&quot;:100,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:1},{&quot;name&quot;:&quot;preload_enabled&quot;,&quot;buckets&quot;:1}],&quot;hashing_key&quot;:&quot;sm_preload_latest_search&quot;,&quot;holdout_name&quot;:null},&quot;ehp_infants_v2_auto_close&quot;:{&quot;subject&quot;:&quot;visitor&quot;,&quot;buckets&quot;:2,&quot;percent_exposed&quot;:100,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:1},{&quot;name&quot;:&quot;treatment&quot;,&quot;buckets&quot;:1}],&quot;hashing_key&quot;:&quot;ehp_infants_v2_auto_close&quot;,&quot;holdout_name&quot;:null},&quot;ehp_infants_v2&quot;:{&quot;subject&quot;:&quot;bev&quot;,&quot;buckets&quot;:2,&quot;percent_exposed&quot;:100,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:1},{&quot;name&quot;:&quot;treatment&quot;,&quot;buckets&quot;:1}],&quot;hashing_key&quot;:&quot;ehp_infants_v2&quot;,&quot;holdout_name&quot;:null},&quot;china_mapbox_street&quot;:{&quot;subject&quot;:&quot;bev&quot;,&quot;buckets&quot;:2,&quot;percent_exposed&quot;:100,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:1},{&quot;name&quot;:&quot;mapbox_street&quot;,&quot;buckets&quot;:1}],&quot;hashing_key&quot;:&quot;china_mapbox_street_v1&quot;,&quot;holdout_name&quot;:null},&quot;china_android_app_direct_download&quot;:{&quot;subject&quot;:&quot;user&quot;,&quot;buckets&quot;:2,&quot;percent_exposed&quot;:100,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:1},{&quot;name&quot;:&quot;treatment&quot;,&quot;buckets&quot;:1}],&quot;hashing_key&quot;:&quot;china_android_app_direct_download&quot;,&quot;holdout_name&quot;:null},&quot;china_app_banner_bottom&quot;:{&quot;subject&quot;:&quot;bev&quot;,&quot;buckets&quot;:2,&quot;percent_exposed&quot;:100,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:1},{&quot;name&quot;:&quot;treatment&quot;,&quot;buckets&quot;:1}],&quot;hashing_key&quot;:&quot;china_app_banner_bottom&quot;,&quot;holdout_name&quot;:null},&quot;post_signup_engagement_modal&quot;:{&quot;subject&quot;:&quot;user&quot;,&quot;buckets&quot;:2,&quot;percent_exposed&quot;:100,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:1},{&quot;name&quot;:&quot;treatment&quot;,&quot;buckets&quot;:1}],&quot;hashing_key&quot;:&quot;post_signup_engagement_modal&quot;,&quot;holdout_name&quot;:null},&quot;mobile_web_auto_login_android&quot;:{&quot;subject&quot;:&quot;user&quot;,&quot;buckets&quot;:3,&quot;percent_exposed&quot;:100,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:1},{&quot;name&quot;:&quot;token_and_login&quot;,&quot;buckets&quot;:1},{&quot;name&quot;:&quot;token_no_login&quot;,&quot;buckets&quot;:1}],&quot;hashing_key&quot;:&quot;mobile_web_auto_login_android&quot;,&quot;holdout_name&quot;:null},&quot;mobile_web_auto_login_ios&quot;:{&quot;subject&quot;:&quot;user&quot;,&quot;buckets&quot;:3,&quot;percent_exposed&quot;:100,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:1},{&quot;name&quot;:&quot;token_and_login&quot;,&quot;buckets&quot;:1},{&quot;name&quot;:&quot;token_no_login&quot;,&quot;buckets&quot;:1}],&quot;hashing_key&quot;:&quot;mobile_web_auto_login_ios&quot;,&quot;holdout_name&quot;:null},&quot;signup_garden_in_alipay_browser&quot;:{&quot;subject&quot;:&quot;visitor&quot;,&quot;buckets&quot;:2,&quot;percent_exposed&quot;:100,&quot;treatments&quot;:[{&quot;name&quot;:&quot;control&quot;,&quot;buckets&quot;:1},{&quot;name&quot;:&quot;treatment&quot;,&quot;buckets&quot;:1}],&quot;hashing_key&quot;:&quot;signup_garden_in_alipay_browser&quot;,&quot;holdout_name&quot;:null}}" id="_bootstrap-erf" />
+<script src="https://a2.muscache.com/airbnb/static/packages/header_cookie.bundle-8d2ec7ee7d4c367e3680.js" type="text/javascript"></script>
+
+
+    <script>
+
+      window.MUSCACHE_CDN_PROVIDER = 'Unknown';
+</script>    <script defer="defer" src="https://a1.muscache.com/airbnb/static/packages/cdn_provider-955038e0686ec92cb7402ca76b957d11.js" type="text/javascript"></script>
+
+      <div class="flash-container"></div>
+
+    <main id="site-content" role="main">
+      
+<div data-hypernova-key="invitationbundlejs"><div class="referrals-app" data-reactid=".o7t75zgzr4" data-react-checksum="169588197"><div class="header-cover background-cover" data-reactid=".o7t75zgzr4.0"><div class="referrals-hero page-container-responsive" data-reactid=".o7t75zgzr4.0.0"><div class="row space-8" data-reactid=".o7t75zgzr4.0.0.0"><div class="col-sm-11 col-md-10 col-lg-9 col-center" data-reactid=".o7t75zgzr4.0.0.0.0"><div class="va-container va-container-v va-container-h" data-reactid=".o7t75zgzr4.0.0.0.0.0"><div class="va-middle text-center text-contrast" data-reactid=".o7t75zgzr4.0.0.0.0.0.0"><a href="/users/show/19527832" target="_blank" data-reactid=".o7t75zgzr4.0.0.0.0.0.0.0"><img class="media-photo media-round profile-photo space-top-sm-4 space-top-8 hide-sm" src="https://a2.muscache.com/im/pictures/adf24d18-32ef-4289-9af7-107175a1ff65.jpg?aki_policy=profile_x_medium" alt="Kun" data-reactid=".o7t75zgzr4.0.0.0.0.0.0.0.0"/></a><h2 data-reactid=".o7t75zgzr4.0.0.0.0.0.0.1"><span data-reactid=".o7t75zgzr4.0.0.0.0.0.0.1.0">Kun送您￥200旅行基金</span></h2><div class="hero-subtext-md-lg" data-reactid=".o7t75zgzr4.0.0.0.0.0.0.2"><span data-reactid=".o7t75zgzr4.0.0.0.0.0.0.2.0"><span data-reactid=".o7t75zgzr4.0.0.0.0.0.0.2.0.0">不论预算多少，Airbnb都是您租住独特本地房源的最佳选择。</span><span data-reactid=".o7t75zgzr4.0.0.0.0.0.0.2.0.1"> </span><span class="terms-and-conditions" data-reactid=".o7t75zgzr4.0.0.0.0.0.0.2.0.2"><span data-reactid=".o7t75zgzr4.0.0.0.0.0.0.2.0.2.0"><span data-reactid=".o7t75zgzr4.0.0.0.0.0.0.2.0.2.0.0">查看</span><span data-reactid=".o7t75zgzr4.0.0.0.0.0.0.2.0.2.0.$0"><a href="https://zh.airbnb.com/referrals/terms_and_conditions?offer_name=CN_localized_200_200_500" data-reactid=".o7t75zgzr4.0.0.0.0.0.0.2.0.2.0.$0.0"><span data-reactid=".o7t75zgzr4.0.0.0.0.0.0.2.0.2.0.$0.0.0">条款及细则</span></a></span></span></span></span></div></div></div></div></div></div></div><div class="page-container-responsive" data-reactid=".o7t75zgzr4.1"><div class="signup-btn-container" data-reactid=".o7t75zgzr4.1.0"><button class="btn btn-jumbo signup-btn" type="button" href="/signup_login" data-prevent-default="true" data-reactid=".o7t75zgzr4.1.0.0"><span data-reactid=".o7t75zgzr4.1.0.0.0">注册帐号，领取您的旅行基金</span></button></div><div class="how-it-works-invitation" data-reactid=".o7t75zgzr4.1.1"><h3 class="text-center space-4" data-reactid=".o7t75zgzr4.1.1.0"><span data-reactid=".o7t75zgzr4.1.1.0.0">如何使用Airbnb</span></h3><div class="row" data-reactid=".o7t75zgzr4.1.1.1"><div class="col-md-4" data-reactid=".o7t75zgzr4.1.1.1.0"><div class="row" data-reactid=".o7t75zgzr4.1.1.1.0.0"><div class="col-center col-md-10 col-sm-8" data-reactid=".o7t75zgzr4.1.1.1.0.0.0"><div class="how-it-works-column space-top-4" data-reactid=".o7t75zgzr4.1.1.1.0.0.0.0"><div class="how-it-works-item" data-reactid=".o7t75zgzr4.1.1.1.0.0.0.0.0"><i class="icon icon-size-2 icon-search" data-reactid=".o7t75zgzr4.1.1.1.0.0.0.0.0.0"></i></div><div class="how-it-works-item how-it-works-text" data-reactid=".o7t75zgzr4.1.1.1.0.0.0.0.1"><span data-reactid=".o7t75zgzr4.1.1.1.0.0.0.0.1.0">探索独特的住宿选择。</span></div></div></div></div></div><div class="col-md-4" data-reactid=".o7t75zgzr4.1.1.1.1"><div class="row" data-reactid=".o7t75zgzr4.1.1.1.1.0"><div class="col-center col-md-10 col-sm-8" data-reactid=".o7t75zgzr4.1.1.1.1.0.0"><div class="how-it-works-column space-top-4" data-reactid=".o7t75zgzr4.1.1.1.1.0.0.0"><div class="how-it-works-item" data-reactid=".o7t75zgzr4.1.1.1.1.0.0.0.0"><i class="icon icon-size-2 icon-comment" data-reactid=".o7t75zgzr4.1.1.1.1.0.0.0.0.0"></i></div><div class="how-it-works-item how-it-works-text" data-reactid=".o7t75zgzr4.1.1.1.1.0.0.0.1"><span data-reactid=".o7t75zgzr4.1.1.1.1.0.0.0.1.0">联系房东了解房源。</span></div></div></div></div></div><div class="col-md-4" data-reactid=".o7t75zgzr4.1.1.1.2"><div class="row" data-reactid=".o7t75zgzr4.1.1.1.2.0"><div class="col-center col-md-10 col-sm-8" data-reactid=".o7t75zgzr4.1.1.1.2.0.0"><div class="how-it-works-column space-top-4" data-reactid=".o7t75zgzr4.1.1.1.2.0.0.0"><div class="how-it-works-item" data-reactid=".o7t75zgzr4.1.1.1.2.0.0.0.0"><i class="icon icon-size-2 icon-suitcase" data-reactid=".o7t75zgzr4.1.1.1.2.0.0.0.0.0"></i></div><div class="how-it-works-item how-it-works-text" data-reactid=".o7t75zgzr4.1.1.1.2.0.0.0.1"><span data-reactid=".o7t75zgzr4.1.1.1.2.0.0.0.1.0">向房东预订位置极好的房源。</span></div></div></div></div></div></div></div></div><noscript data-reactid=".o7t75zgzr4.2"></noscript></div></div>
+<script type="application/json" data-hypernova-key="invitationbundlejs"><!--{"init_data":{"enable_auto_popup_signup_modal":false,"is_referred_email_business_email":false,"referred_email":null,"referrer_first_name":"Kun","referrer_profile_link":"/users/show/19527832","referrer_profile_pic_url":"https://a2.muscache.com/im/pictures/adf24d18-32ef-4289-9af7-107175a1ff65.jpg?aki_policy=profile_x_medium","terms_and_conditions_link":"https://zh.airbnb.com/referrals/terms_and_conditions?offer_name=CN_localized_200_200_500","travel_credit":"￥200"},"phrase_bundle":{"shared.WeChat":"微信","share_wechat.modal_title":"分享到微信","share_wechat.instruction":"扫描二维码，打开网页后点击右上角“分享按钮”","share_wechat.how":"如何分享？","share_wechat.step1":"点击“发现\"","share_wechat.step2":"选择“扫描QR码\"并扫描","share_wechat.step3":"点击右上角的按钮","share_wechat.step4":"分享至朋友圈地或发送给好友","contact_import_legal_statement":"Airbnb储存了这些联系人，以便您能够更快捷地发送消息给朋友。如果您想移除联系人，请访问您的帐号设置。","enter_comma_separated_email_addresses":"添加电子邮件地址","enter_email_addresses":"输入电子邮件地址","enter_valid_email":"请输入一个有效的电子邮箱","gmail_permission_text":"从Gmail导入联系人","yahoo_permission_text":"从雅虎导入联系人","hotmail_permission_text":"从Hotmail导入联系人","send":"发送","sent":"已发送！","error":"出错了！","cancel":"取消","send_invites":"发送%{smart_count}个邀请","remind":"提醒","earned":"已赚取","pending":"还能赚取","choose_friends_to_invite":"选择要邀请的好友","signed_up":"已注册Airbnb帐号，但还没使用Airbnb旅行。","hasnt_signed_up":"还没有注册帐号。","took_a_trip":"已经使用Airbnb去旅行了!","hosted":"通过Airbnb出租了房源。棒极了！","hosted_and_traveled":"已通过Airbnb出租及旅行。棒极了！","contacts_search_empty_message":"没有与您的搜索相符的联系人。","contacts_search_placeholder":"搜索联系人","recommended_contacts":"推荐的联系人","other_contacts":"其他联系人","travel_credit":"旅行基金","check_all":"全选","no_contact_found_message":"很抱歉，我们找不到与这个帐号关联的联系人。请使用其他帐号。","contact_too_many_selected":"太多联系人","or":"或","hero_text":"分享您对旅行的热爱","add_friends_email_addresses":"添加好友的电子邮件地址","terms_and_conditions":"查看%{link_start}条款及细则%{link_end}","share_via_messenger":"Messenger","share_via_facebook":"Facebook","share_via_weibo":"微博","share_via_wechat":"微信","youve_got_money_to_spend":"您有%{tag_start}%{available_credit_amount}%{tag_end}的旅行基金为您所用！","earned_pending_status_subtext":"您一共已经赚取了 %{earned_credit_amount}，其中%{pending_credit_amount}即将到帐。继续邀请朋友并赚取旅行基金吧！","hasnt_signed_up2":"%{name}%{tag_start}尚未注册帐号。%{tag_end}","signed_up2":"%{name}%{tag_start}注册了帐号，但尚未预订过住宿。%{tag_end}","took_a_trip2":"%{name}%{tag_start}预订了一次旅程！%{tag_end}","hosted2":"%{name}%{tag_start}以房东身份预订了房源！%{tag_end}","hosted_and_traveled2":"%{name}%{tag_start}在Airbnb上出租又预订。做得好！%{tag_end}","earned_credit":"您获得了%{credit_amount}！","earned_credit_long":"哇！您获得了%{credit_amount}","pending_credit":"%{credit_amount} 即将到帐","learn_more_about_how_invitations_work":"%{link_start}了解Airbnb邀请是如何运作的。%{link_end}","invite_your_friends_by_email_mobile":"通过电子邮件邀请好友","native_mobile_sms_invite_message":"%{full_name}邀请您加入Airbnb。注册帐号即可为您的第一趟旅程减免%{credit_amount}。%{personal_link}","native_mobile_email_invite_subj":"随%{full_name}加入Airbnb","native_mobile_email_invite_message":"%{full_name}邀请您加入Airbnb。注册帐号即可为您的第一趟旅程减免%{credit_amount}。%{personal_link}","copy_share_link":"复制","copied_share_link":"已复制！","import_your_contacts_from_email_providers":"导入%{gmail_link_start}Gmail%{gmail_link_end} %{vertical_divider_start}%{vertical_divider_end} %{yahoo_link_start}雅虎邮箱%{yahoo_link_end} %{vertical_divider_start}%{vertical_divider_end} %{outlook_link_start}Outlook邮箱%{outlook_link_end}的联系人","import_your_contacts_from_email_providers_v3":"从以下邮箱导入联系人：%{gmail_link_start}Gmail%{gmail_link_end}%{vertical_divider_start}%{vertical_divider_end}%{yahoo_link_start}Yahoo! Mail%{yahoo_link_end}%{vertical_divider_start}%{vertical_divider_end}%{outlook_link_start}Outlook Mail%{outlook_link_end}","receive_travel_coupon":"%{first_name}送您%{travel_credit}旅行基金","airbnb_intro":"不论预算多少，Airbnb都是您租住独特本地房源的最佳选择。","sign_up_claim_credit":"注册帐号，领取您的旅行基金","how_it_works":"如何使用Airbnb","intro_explore":"探索独特的住宿选择。","intro_contact":"联系房东了解房源。","intro_book":"向房东预订位置极好的房源。","SMS":"短信","referrals.bt.accounts_existence.question":"您是否已经有Airbnb帐号？","shared.Yes":"是","shared.No":"否"},"phrases":{},"trebuchets":{}}--></script>
+
+    </main>
+
+      <div id="footer-promo-mount"></div>
+      <div id="footer" class="container-brand-light footer-surround footer-container">
+          <footer class="page-container-responsive footer-container" role="contentinfo">
+    <div class="row row-condensed">
+      <div class="language-curr-picker col-md-2">
+        <div class="clearfix">
+          <div class="language-picker col-sm-6 col-md-12"></div>
+            <div class="currency-picker col-sm-6 col-md-12"></div>
+          <div class="cx-number"></div>
+        </div>
+
+      </div>
+
+      <div class="col-md-2 col-md-offset-1 hide-sm">
+        <h2 class="h5">Airbnb</h2>
+        <ul class="list-layout">
+            <li><a href="/about/about-us" class="link-contrast">关于</a></li>
+            <li><a href="/careers" class="link-contrast">工作机会</a></li>
+            <li><a href="/press/news" class="link-contrast">新闻</a></li>
+            <li><a href="/policies" class="link-contrast">政策</a></li>
+            <li><a href="/help?from=footer" class="link-contrast">帮助</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 col-md-offset-1 hide-sm">
+        <h2 class="h5">发现</h2>
+        <ul class="list-layout">
+            <li><a href="/trust" class="link-contrast">信任与安全</a></li>
+            <li><a href="/invite?r=6" class="link-contrast">好友邀请</a></li>
+              <li><a href="/gift?s=footer" class="link-contrast">礼品卡</a></li>
+            <li><a href="https://www.airbnbaction.com?utm_source=airbnb&amp;utm_medium=footer&amp;utm_campaign=product" class="link-contrast" target="_blank">Airbnb行动力</a></li>
+            <li><a href="/business-travel?s=footer" class="link-contrast">商务差旅</a></li>
+            <li><a href="/things-to-do" class="link-contrast">旅游指南</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 col-md-offset-1 hide-sm">
+        <h2 class="h5">出租</h2>
+        <ul class="list-layout">
+            <li><a href="/host" class="link-contrast">为什么要出租?</a></li>
+            <li><a href="/hospitality" class="link-contrast">好客之道</a></li>
+            <li><a href="/help/responsible-hosting" class="link-contrast">房东义务</a></li>
+        </ul>
+      </div>
+    </div>
+
+      <hr class="footer-divider space-top-8 space-4 hide-sm">
+      <hr class="footer-divider show-sm">
+
+    <div class="footer-table">
+      <ul class="list-layout list-inline icon-list" itemscope itemtype="http://schema.org/Organization">
+        <i class='icon icon-airbnb-alt icon-gray belo-icon icon-size-2'></i>
+          <div class="text-muted">
+            &copy; Airbnb, Inc.
+          </div>
+      </ul>
+      <ul class="list-layout list-inline icon-list right-list" itemscope itemtype="http://schema.org/Organization">
+
+        <link itemprop="url" href="https://zh.airbnb.com">
+        <meta itemprop="logo" content="https://a2.muscache.com/airbnb/static/logos/belo-200x200-4d851c5b28f61931bf1df28dd15e60ef.png">
+
+        <li><a href="/terms" class="link-contrast">条款与隐私</a></li>
+        <div class="hide-sm">
+          <li><a href="/sitemaps" class="link-contrast">网站地图</a></li>
+            <li>
+              <a href="https://www.facebook.com/airbnb" class="link-contrast footer-icon-container" itemprop="sameAs" target="_blank">
+                <span class="screen-reader-only">Facebook</span>
+                <i class='icon footer-icon icon-facebook'></i>
+</a>            </li>
+            <li>
+              <a href="http://www.weibo.com/airbnb" class="link-contrast footer-icon-container" itemprop="sameAs" target="_blank">
+                <span class="screen-reader-only">微博</span>
+                <i class='icon footer-icon icon-weibo'></i>
+</a>            </li>
+
+            <li>
+              <a href="https://twitter.com/airbnb" class="link-contrast footer-icon-container" itemprop="sameAs" target="_blank">
+                <span class="screen-reader-only">Twitter</span>
+                <i class='icon footer-icon icon-twitter'></i>
+</a>            </li>
+            <li>
+              <a href="https://instagram.com/airbnb" class="link-contrast footer-icon-container" itemprop="sameAs" target="_blank">
+                <span class="screen-reader-only">Instagram</span>
+                <i class='icon footer-icon icon-instagram'></i>
+</a>            </li>
+            <li>
+              <a id='wechat-icon' class='link-contrast footer-icon-container'>
+                <span class="screen-reader-only">微信</span>
+                <i class='icon footer-icon icon-wechat'></i>
+              </a>
+              <div
+                class='tooltip tooltip-bottom-middle hide-sm'
+                role='tooltip'
+                data-trigger='#wechat-icon'
+                data-sticky='true'
+              >
+                <div class='wechat-hover-container'>
+                  <div class='wechat-title'>
+                    获得即时提醒，探索旅行故事
+                  </div>
+                  <div class='wechat-service-account'>
+                    Airbnb服务号：AirbnbOfficial
+                  </div>
+                  <img
+                    class='wechat-qr-code'
+                    src="https://a0.muscache.com/airbnb/static/wechat/service_account_qr_code_footer-ecc84ec834ded36dbb81d03b8095091a.png"
+                    width='150'
+                    height='150'
+                  />
+                </div>
+              </div>
+            </li>
+        </div>
+      </ul>
+    </div>
+</footer>
+
+      </div>
+
+    <meta content="{&quot;canonical_host&quot;:&quot;zh.airbnb.com&quot;,&quot;language&quot;:&quot;zh&quot;,&quot;locale&quot;:&quot;zh&quot;,&quot;api_config&quot;:{&quot;baseUrl&quot;:&quot;https://zh.airbnb.com/api&quot;,&quot;key&quot;:&quot;d306zoyjsyarp7ifhu67rjxn52tv0t20&quot;},&quot;deep_link&quot;:null,&quot;tracking_context&quot;:{&quot;source&quot;:&quot;monorail&quot;,&quot;platform&quot;:&quot;js&quot;,&quot;version&quot;:&quot;80380405874cf53a856d9e275e2c17d69b4fe93c&quot;,&quot;controller&quot;:&quot;referrals&quot;,&quot;action&quot;:&quot;tell_a_friend&quot;,&quot;req_uuid&quot;:&quot;b7e6557b-e51b-4580-b28d-a47b2aacc1ff&quot;,&quot;shardset&quot;:&quot;a0,a1,a2&quot;},&quot;no_flash_alerts&quot;:null,&quot;google_maps_url&quot;:&quot;https://maps.googleapis.com/maps/api/js?language=zh&amp;region=CN&amp;v=3.24&amp;libraries=places&amp;client=gme-airbnbinc&amp;channel=monorail-prod&quot;,&quot;airbnb_open_street_map_js_url&quot;:&quot;https://a1.muscache.com/airbnb/static/packages/mapbox.bundle-7dfcc32af8c863f943c3.js&quot;,&quot;airbnb_open_street_map_css_url&quot;:&quot;https://a1.muscache.com/airbnb/static/mapbox/mapbox-2413745018eab23321bb6ef63237e2d6.css&quot;,&quot;d3_js_url&quot;:&quot;https://a0.muscache.com/airbnb/static/vendor/d3.v3.5.17.min-5482cf82071bdbae91300ccc092b8ebb.js&quot;,&quot;sift_key&quot;:&quot;3d72676b30&quot;,&quot;pellet_id&quot;:&quot;kfgn8s24&quot;}" id="_bootstrap-layout-init" />
+<meta content="{&quot;language&quot;:&quot;zh&quot;,&quot;locale&quot;:&quot;zh&quot;,&quot;country&quot;:&quot;HK&quot;,&quot;tld_country&quot;:&quot;US&quot;,&quot;currencies&quot;:{&quot;AED&quot;:{&quot;symbol&quot;:&quot;&amp;#1583;.&amp;#1573;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;ﺩ.ﺇ&quot;}},&quot;ARS&quot;:{&quot;symbol&quot;:&quot;$&quot;,&quot;code_required&quot;:true,&quot;options&quot;:{}},&quot;AUD&quot;:{&quot;symbol&quot;:&quot;$&quot;,&quot;code_required&quot;:true,&quot;options&quot;:{}},&quot;BGN&quot;:{&quot;symbol&quot;:&quot;&amp;#1083;&amp;#1074;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;лв&quot;}},&quot;BRL&quot;:{&quot;symbol&quot;:&quot;R$&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{}},&quot;CAD&quot;:{&quot;symbol&quot;:&quot;$&quot;,&quot;code_required&quot;:true,&quot;options&quot;:{}},&quot;CHF&quot;:{&quot;symbol&quot;:&quot;CHF&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;position&quot;:&quot;after&quot;,&quot;space_between_price_and_symbol&quot;:true,&quot;hide_code_if_symbol_shown&quot;:true}},&quot;CLP&quot;:{&quot;symbol&quot;:&quot;$&quot;,&quot;code_required&quot;:true,&quot;options&quot;:{}},&quot;CNY&quot;:{&quot;symbol&quot;:&quot;&amp;#65509;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;￥&quot;}},&quot;COP&quot;:{&quot;symbol&quot;:&quot;$&quot;,&quot;code_required&quot;:true,&quot;options&quot;:{}},&quot;CRC&quot;:{&quot;symbol&quot;:&quot;&amp;#8353;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;₡&quot;}},&quot;CZK&quot;:{&quot;symbol&quot;:&quot;&amp;#75;&amp;#269;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;Kč&quot;}},&quot;DKK&quot;:{&quot;symbol&quot;:&quot;kr&quot;,&quot;code_required&quot;:true,&quot;options&quot;:{&quot;position&quot;:&quot;after&quot;,&quot;space_between_price_and_symbol&quot;:true,&quot;explicit_currency_not_aesthetic&quot;:true}},&quot;EUR&quot;:{&quot;symbol&quot;:&quot;&amp;euro;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;€&quot;,&quot;position&quot;:&quot;special&quot;}},&quot;GBP&quot;:{&quot;symbol&quot;:&quot;&amp;pound;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;£&quot;}},&quot;HKD&quot;:{&quot;symbol&quot;:&quot;$&quot;,&quot;code_required&quot;:true,&quot;options&quot;:{}},&quot;HRK&quot;:{&quot;symbol&quot;:&quot;kn&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{}},&quot;HUF&quot;:{&quot;symbol&quot;:&quot;Ft&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{}},&quot;IDR&quot;:{&quot;symbol&quot;:&quot;Rp&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{}},&quot;ILS&quot;:{&quot;symbol&quot;:&quot;&amp;#8362;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;₪&quot;}},&quot;INR&quot;:{&quot;symbol&quot;:&quot;&amp;#8377;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;₹&quot;}},&quot;JPY&quot;:{&quot;symbol&quot;:&quot;&amp;yen;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;¥&quot;,&quot;space_between_price_and_symbol&quot;:true}},&quot;KRW&quot;:{&quot;symbol&quot;:&quot;&amp;#8361;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;₩&quot;}},&quot;MAD&quot;:{&quot;symbol&quot;:&quot;MAD&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{}},&quot;MXN&quot;:{&quot;symbol&quot;:&quot;$&quot;,&quot;code_required&quot;:true,&quot;options&quot;:{}},&quot;MYR&quot;:{&quot;symbol&quot;:&quot;&amp;#82;&amp;#77;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;RM&quot;}},&quot;NOK&quot;:{&quot;symbol&quot;:&quot;kr&quot;,&quot;code_required&quot;:true,&quot;options&quot;:{&quot;position&quot;:&quot;after&quot;,&quot;space_between_price_and_symbol&quot;:true,&quot;explicit_currency_not_aesthetic&quot;:true}},&quot;NZD&quot;:{&quot;symbol&quot;:&quot;$&quot;,&quot;code_required&quot;:true,&quot;options&quot;:{}},&quot;PEN&quot;:{&quot;symbol&quot;:&quot;&amp;#83;&amp;#47;&amp;#46;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;S/.&quot;}},&quot;PHP&quot;:{&quot;symbol&quot;:&quot;&amp;#8369;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;₱&quot;}},&quot;PLN&quot;:{&quot;symbol&quot;:&quot;z&amp;#22;&amp;#322;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;zł&quot;,&quot;position&quot;:&quot;after&quot;,&quot;space_between_price_and_symbol&quot;:true}},&quot;RON&quot;:{&quot;symbol&quot;:&quot;lei&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{}},&quot;RUB&quot;:{&quot;symbol&quot;:&quot;&amp;#1088;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;₽&quot;,&quot;position&quot;:&quot;after&quot;}},&quot;SAR&quot;:{&quot;symbol&quot;:&quot;SR&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{}},&quot;SEK&quot;:{&quot;symbol&quot;:&quot;kr&quot;,&quot;code_required&quot;:true,&quot;options&quot;:{&quot;position&quot;:&quot;after&quot;,&quot;space_between_price_and_symbol&quot;:true,&quot;explicit_currency_not_aesthetic&quot;:true}},&quot;SGD&quot;:{&quot;symbol&quot;:&quot;$&quot;,&quot;code_required&quot;:true,&quot;options&quot;:{}},&quot;THB&quot;:{&quot;symbol&quot;:&quot;&amp;#3647;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;฿&quot;}},&quot;TRY&quot;:{&quot;symbol&quot;:&quot;&amp;#84;&amp;#76;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;₺&quot;,&quot;position&quot;:&quot;after&quot;,&quot;space_between_price_and_symbol&quot;:true}},&quot;TWD&quot;:{&quot;symbol&quot;:&quot;$&quot;,&quot;code_required&quot;:true,&quot;options&quot;:{}},&quot;UAH&quot;:{&quot;symbol&quot;:&quot;&amp;#8372;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;₴&quot;}},&quot;USD&quot;:{&quot;symbol&quot;:&quot;$&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{}},&quot;UYU&quot;:{&quot;symbol&quot;:&quot;&amp;#36;&amp;#85;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;$U&quot;}},&quot;VND&quot;:{&quot;symbol&quot;:&quot;&amp;#8363;&quot;,&quot;code_required&quot;:false,&quot;options&quot;:{&quot;unicode_symbol&quot;:&quot;₫&quot;}},&quot;ZAR&quot;:{&quot;symbol&quot;:&quot;R&quot;,&quot;code_required&quot;:true,&quot;options&quot;:{}}},&quot;current_locale_name&quot;:&quot;中文 (简体)&quot;,&quot;languages&quot;:[{&quot;locale_name&quot;:&quot;Bahasa Indonesia&quot;,&quot;locale&quot;:&quot;id&quot;},{&quot;locale_name&quot;:&quot;Bahasa Melayu&quot;,&quot;locale&quot;:&quot;ms&quot;},{&quot;locale_name&quot;:&quot;Català&quot;,&quot;locale&quot;:&quot;ca&quot;},{&quot;locale_name&quot;:&quot;Dansk&quot;,&quot;locale&quot;:&quot;da&quot;},{&quot;locale_name&quot;:&quot;Deutsch&quot;,&quot;locale&quot;:&quot;de&quot;},{&quot;locale_name&quot;:&quot;English&quot;,&quot;locale&quot;:&quot;en&quot;},{&quot;locale_name&quot;:&quot;Español&quot;,&quot;locale&quot;:&quot;es&quot;},{&quot;locale_name&quot;:&quot;Eλληνικά&quot;,&quot;locale&quot;:&quot;el&quot;},{&quot;locale_name&quot;:&quot;Français&quot;,&quot;locale&quot;:&quot;fr&quot;},{&quot;locale_name&quot;:&quot;Italiano&quot;,&quot;locale&quot;:&quot;it&quot;},{&quot;locale_name&quot;:&quot;Magyar&quot;,&quot;locale&quot;:&quot;hu&quot;},{&quot;locale_name&quot;:&quot;Nederlands&quot;,&quot;locale&quot;:&quot;nl&quot;},{&quot;locale_name&quot;:&quot;Norsk&quot;,&quot;locale&quot;:&quot;no&quot;},{&quot;locale_name&quot;:&quot;Polski&quot;,&quot;locale&quot;:&quot;pl&quot;},{&quot;locale_name&quot;:&quot;Português&quot;,&quot;locale&quot;:&quot;pt&quot;},{&quot;locale_name&quot;:&quot;Suomi&quot;,&quot;locale&quot;:&quot;fi&quot;},{&quot;locale_name&quot;:&quot;Svenska&quot;,&quot;locale&quot;:&quot;sv&quot;},{&quot;locale_name&quot;:&quot;Türkçe&quot;,&quot;locale&quot;:&quot;tr&quot;},{&quot;locale_name&quot;:&quot;Íslenska&quot;,&quot;locale&quot;:&quot;is&quot;},{&quot;locale_name&quot;:&quot;Čeština&quot;,&quot;locale&quot;:&quot;cs&quot;},{&quot;locale_name&quot;:&quot;Русский&quot;,&quot;locale&quot;:&quot;ru&quot;},{&quot;locale_name&quot;:&quot;ภาษาไทย&quot;,&quot;locale&quot;:&quot;th&quot;},{&quot;locale_name&quot;:&quot;中文 (简体)&quot;,&quot;locale&quot;:&quot;zh&quot;},{&quot;locale_name&quot;:&quot;中文 (繁體)&quot;,&quot;locale&quot;:&quot;zh-TW&quot;},{&quot;locale_name&quot;:&quot;日本語&quot;,&quot;locale&quot;:&quot;ja&quot;},{&quot;locale_name&quot;:&quot;한국어&quot;,&quot;locale&quot;:&quot;ko&quot;}]}" id="_bootstrap-i18n-init" />
+<meta content="{&quot;enabled&quot;:true,&quot;appId&quot;:&quot;138566025676&quot;,&quot;scope&quot;:&quot;email,user_birthday,user_likes,user_education_history,user_hometown,user_location,user_friends&quot;,&quot;sdkUrl&quot;:&quot;https://connect.facebook.net/zh_CN/sdk.js&quot;}" id="_bootstrap-facebook-init" />
+<meta content="{&quot;packages/field_guide.bundle.js&quot;:&quot;https://a0.muscache.com/airbnb/static/packages/field_guide.bundle-bf699502c0f8bd9eed58.js&quot;,&quot;packages/airlock_modal.bundle.js&quot;:&quot;https://a0.muscache.com/airbnb/static/packages/airlock_modal.bundle-cc97ed6223ba1ee0ccf2.js&quot;,&quot;packages/airlock_inline.bundle.js&quot;:&quot;https://a2.muscache.com/airbnb/static/packages/airlock_inline.bundle-f5d95cf079e83d55a903.js&quot;,&quot;packages/account_activation.bundle.js&quot;:&quot;https://a2.muscache.com/airbnb/static/packages/account_activation.bundle-2de24994a0dce9e57cb6.js&quot;,&quot;packages/reset_password_modal.bundle.js&quot;:&quot;https://a2.muscache.com/airbnb/static/packages/reset_password_modal.bundle-30ef27204d0b51edcbf2.js&quot;}" id="_bootstrap-javascript_paths" />
+<meta content="{&quot;show_engagement_overlay_p2&quot;:false,&quot;show_engagement_overlay_p3&quot;:false,&quot;show_engagement_overlay_p1&quot;:false,&quot;px_trips_menu_in_header&quot;:true,&quot;px_help_panel_feedback_link&quot;:true,&quot;back_to_search_results&quot;:false,&quot;first_visit_survey&quot;:false,&quot;oauth_popup&quot;:true,&quot;modal_audit&quot;:true,&quot;referrals_avatar_dropdown_entry_point_copy&quot;:true,&quot;react_sm_search_modal_v3&quot;:false,&quot;use_android_deep_link&quot;:true,&quot;sm_preload_latest_search&quot;:true,&quot;ehp_infants_v2_roll_out&quot;:true,&quot;china_mapbox_street_force_trebuchet&quot;:false,&quot;china_mapbox_street&quot;:true,&quot;show_smart_banner&quot;:true,&quot;china_android_app_direct_download&quot;:true,&quot;china_app_banner_bottom&quot;:false,&quot;render_sitewide_footer_instant_promo&quot;:true,&quot;post_signup_engagement_modal&quot;:false,&quot;mobile_web_auto_login&quot;:true,&quot;force_signup_garden_in_alipay_browser&quot;:false,&quot;signup_garden_in_alipay_browser&quot;:true,&quot;mt_experience_host_nav_item&quot;:true,&quot;mt_show_city_host_link_header&quot;:false}" id="_bootstrap-trebuchet" />
+<meta content="&quot;referrals#tell_a_friend&quot;" id="_bootstrap-controller_action_pair" />
+<meta content="false" id="_bootstrap-show-signup-garden" />
+<meta content="false" id="_bootstrap-help-dropdown-experiment-enabled" />
+<meta content="{&quot;email&quot;:&quot;de2c09abb53181ff0a30e07415f0aa5c5a342d47df185510b3cc04367c99513b&quot;,&quot;first_name&quot;:&quot;495ba379cca4d920f429dc083e604f02f6c68fbc68227a6c9e82283a701ee9dc&quot;,&quot;last_name&quot;:&quot;3abd72ec6352d6085d85e34f0478dca7d14ef8048f3c1986e28106d654713946&quot;,&quot;gender&quot;:&quot;62c66a7a5dd70c3146618063c344e531e6d4b59e379808443ce962b3abd63c5a&quot;,&quot;date_of_birth&quot;:&quot;7f3741ccd45c31516de929493a06346e6444d7da2d922a4e6fb241449d540035&quot;,&quot;external_id&quot;:&quot;275e3db70d83d40325736313848f9e847e0cd4e2ed2c0e1386871d83cfec120c&quot;}" id="_bootstrap-facebook_advanced_matching" />
+<meta content="&quot;https://a1.muscache.com/airbnb/static/packages/engagement_carousel.bundle-e91621dfb78928027151.js&quot;" id="_bootstrap-engagement_post_signup_js" />
+<meta content="true" id="_bootstrap-show_epcot_header" />
+<meta content="null" id="_bootstrap-referrals-c-ethnio-id" />
+<meta content="{&quot;should_load_inspectlet&quot;:false,&quot;tags&quot;:{&quot;source&quot;:&quot;10&quot;}}" id="_bootstrap-inspectlet_data" />
+<meta content="{&quot;env&quot;:&quot;production&quot;,&quot;client_id&quot;:&quot;5ca541ad-47b9-4b16-8045-2f4c6e830450&quot;,&quot;client_key&quot;:&quot;production_r29fkzj4_pfpfmbt48yh4ht8c&quot;}" id="_bootstrap-amex_checkout" />
+<meta content="{&quot;js&quot;:&quot;https://a1.muscache.com/airbnb/static/packages/surveyair.bundle-d2274533dcd688cb92b4.js&quot;,&quot;css&quot;:&quot;https://a0.muscache.com/airbnb/static/packages/surveyair-72c4e07bc95f66e2140c66215ef89f56.css&quot;}" id="_bootstrap-surveyair" />
+<meta content="{&quot;js&quot;:&quot;https://a2.muscache.com/airbnb/static/packages/browser-update.bundle-5e482dd690aa08cec71b.js&quot;}" id="_bootstrap-browser-update" />
+<meta content="&quot;https://a0.muscache.com/airbnb/static/china_typeahead_data-06cee030dd9f4e721c7044d7e83e002e.json&quot;" id="_bootstrap-china_typeahead_data" />
+<meta content="{&quot;mario_copy_monorail_p3_modal.title&quot;:&quot;Airbnb欢迎您&quot;,&quot;mario_copy_monorail_p3_modal.summary&quot;:&quot;在您的下次旅程中不论是与家人、朋友同行或只是出差，我们有超过两百万个房源供您选择。&quot;,&quot;mario_copy_monorail_referrals.tab_text.variation0&quot;:&quot;旅行基金&quot;,&quot;mario_copy_monorail_referrals.tab_text.variation1&quot;:&quot;邀请好友&quot;,&quot;mario_copy_monorail_referrals.tab_text.variation2&quot;:&quot;邀请好友&quot;,&quot;mario_copy_monorail_referrals.tab_text.variation3&quot;:&quot;好友邀请&quot;,&quot;mario_copy_monorail_referrals.banner_body_text.variation0&quot;:&quot;为好友的第一趟Airbnb旅程送上%{sign_up_credit}，您即可获得高达%{total_credit}的旅行基金。&quot;,&quot;engagement_overlay.single_page.title&quot;:&quot;Airbnb欢迎您&quot;,&quot;engagement_overlay.single_page.summary&quot;:&quot;在您的下次旅程中不论是与家人、朋友同行或只是出差，我们有超过两百万个房源供您选择。&quot;,&quot;engagement_overlay.single_page.complete&quot;:&quot;开始吧&quot;,&quot;3things_headline_onboarding&quot;:&quot;关于Airbnb需要了解的三件事&quot;,&quot;3things_body_onboarding&quot;:&quot;这是数百万用户与家人、朋友一起旅行或出差时选择Airbnb的理由。&quot;,&quot;quality1_headline_onboarding&quot;:&quot;独特房源的五星级体验&quot;,&quot;quality1_body_onboarding&quot;:&quot;由过往的房客评价推荐，在世界各地寻找设计独特的完美住宿，成为您旅途中温暖的家。&quot;,&quot;value1_headline_onboarding&quot;:&quot;以优惠的价格，享受家的舒适&quot;,&quot;value1_body_onboarding&quot;:&quot;无论您的预算是多少，都能找到合适的房源。许多房源还提供无线网络、厨房和基本的便利设施，无需另外收费。&quot;,&quot;location1_headline_onboarding&quot;:&quot;190多个国家的数百万房源&quot;,&quot;location1_body_onboarding&quot;:&quot;在全球各地搜索近2百万个遍布每个角落的住宿，不论走到哪里，都能享受家的温暖。&quot;,&quot;service1_headline_onboarding&quot;:&quot;房东们关注您的住宿体验&quot;,&quot;service1_body_onboarding&quot;:&quot;迎接您的不是礼宾服务员，而是房东。他们将会为您解答有关他们的房源或街区的问题。&quot;,&quot;shared.Next&quot;:&quot;下一步&quot;,&quot;shared.Back&quot;:&quot;返回&quot;,&quot;shared.Got it&quot;:&quot;知道了&quot;,&quot;engagement.onboarding.modal.title&quot;:&quot;寻找%{localized_city}的Airbnb房源&quot;,&quot;start_searching&quot;:&quot;开始搜索&quot;,&quot;engagement.discover&quot;:&quot;不论是整套房子或私人房间，为下个旅程寻找完美住宿。&quot;,&quot;first_visit_survey.help_us&quot;:&quot;帮助我们进一步了解访问Airbnb的人。&quot;,&quot;first_visit_survey.ready&quot;:&quot;你觉得你准备好用Airbnb了吗？&quot;,&quot;first_visit_survey.ready.not_ready&quot;:&quot;没有&quot;,&quot;first_visit_survey.ready.ready&quot;:&quot;一般&quot;,&quot;first_visit_survey.ready.sort_of_ready&quot;:&quot;不太&quot;,&quot;first_visit_survey.ready.totally_ready&quot;:&quot;非常&quot;,&quot;first_visit_survey.ready.very_ready&quot;:&quot;比较&quot;,&quot;first_visit_survey.planning_trip&quot;:&quot;你目前正在计划旅行吗？&quot;,&quot;first_visit_survey.planning_trip.trip_in_mind&quot;:&quot;是的，我知道要去哪里&quot;,&quot;first_visit_survey.planning_trip.not_sure_where&quot;:&quot;是的，但是我还不知道要去哪里&quot;,&quot;first_visit_survey.planning_trip.no_plans&quot;:&quot;不，我只是看看&quot;,&quot;signup_survey.how_learned&quot;:&quot;您是如何知道Airbnb的？&quot;,&quot;signup_survey.event&quot;:&quot;活动&quot;,&quot;signup_survey.friend_family&quot;:&quot;从朋友或家人处听说&quot;,&quot;signup_survey.internet_search&quot;:&quot;网络搜索&quot;,&quot;signup_survey.news_article&quot;:&quot;新闻文章&quot;,&quot;signup_survey.online_ad&quot;:&quot;网络广告&quot;,&quot;signup_survey.print_ad&quot;:&quot;平面广告、广告牌或海报&quot;,&quot;signup_survey.social_media&quot;:&quot;社交媒体或博客帖子&quot;,&quot;signup_survey.tv&quot;:&quot;电视&quot;,&quot;signup_survey.dont_remember&quot;:&quot;我不记得了&quot;,&quot;signup_survey.other&quot;:&quot;其他&quot;,&quot;skip&quot;:&quot;跳过&quot;,&quot;smart_banner.title&quot;:&quot;Airbnb iOS版本&quot;,&quot;smart_banner.title_android&quot;:&quot;Airbnb安卓应用&quot;,&quot;smart_banner.INSTALL&quot;:&quot;安装&quot;,&quot;smart_banner.Install&quot;:&quot;安装&quot;,&quot;smart_banner.OPEN MOBILE APP&quot;:&quot;打开&quot;,&quot;smart_banner.Open app&quot;:&quot;打开&quot;,&quot;shared.Close&quot;:&quot;关闭&quot;,&quot;Password&quot;:&quot;密码&quot;,&quot;users.Confirm_Password_to_Continue&quot;:&quot;确认密码以继续操作&quot;,&quot;users.Confirm_Password&quot;:&quot;确认密码&quot;,&quot;users.Cancel&quot;:&quot;取消&quot;,&quot;users.Please_enter_your_Airbnb_password_to_continue.&quot;:&quot;为安全起见，请输入您的Airbnb帐号密码以继续操作。&quot;,&quot;user.signup.forgot_password&quot;:&quot;忘记密码？&quot;,&quot;users.Confirm_Facebook_Password&quot;:&quot;确认Facebook密码&quot;,&quot;home&quot;:&quot;首页&quot;,&quot;profile&quot;:&quot;个人资料&quot;,&quot;download_the_app&quot;:&quot;下载应用&quot;,&quot;sign_up&quot;:&quot;注册&quot;,&quot;log_in&quot;:&quot;登录&quot;,&quot;alerts&quot;:&quot;提醒&quot;,&quot;inbox&quot;:&quot;收件箱&quot;,&quot;messages&quot;:&quot;消息&quot;,&quot;discover&quot;:&quot;发现&quot;,&quot;search&quot;:&quot;搜索&quot;,&quot;how_it_works&quot;:&quot;如何使用Airbnb?&quot;,&quot;help&quot;:&quot;帮助&quot;,&quot;invite_friends&quot;:&quot;邀请好友&quot;,&quot;logout&quot;:&quot;退出&quot;,&quot;name&quot;:&quot;用户&quot;,&quot;photography&quot;:&quot;摄影&quot;,&quot;trips&quot;:&quot;旅程&quot;,&quot;your_trips&quot;:&quot;您的旅程&quot;,&quot;become_a_host&quot;:&quot;成为房东&quot;,&quot;dashboard&quot;:&quot;控制面板&quot;,&quot;guest_picker_guests_label&quot;:&quot;%{smart_count}位房客&quot;,&quot;guest_picker_adult_count&quot;:&quot;%{smart_count}名成人&quot;,&quot;guest_picker_child_count&quot;:&quot;%{smart_count}名儿童&quot;,&quot;guest_picker_infant_count&quot;:&quot;%{smart_count}名婴幼儿&quot;,&quot;guest_picker_age_range&quot;:&quot;年龄%{min} - %{max}岁&quot;,&quot;guest_picker_age_under&quot;:&quot;%{age}岁以下&quot;,&quot;guest_picker_guest_maximum&quot;:&quot;最多%{smart_count}位房客&quot;,&quot;guest_picker_close&quot;:&quot;关闭&quot;,&quot;guest_picker_increment&quot;:&quot;增加%{label}人数&quot;,&quot;guest_picker_decrement&quot;:&quot;减少%{label}人数&quot;,&quot;guest_picker_adults&quot;:&quot;成人&quot;,&quot;guest_picker_children&quot;:&quot;儿童&quot;,&quot;guest_picker_infants&quot;:&quot;婴幼儿&quot;,&quot;close&quot;:&quot;关闭&quot;,&quot;android.strings.search_where_to&quot;:&quot;想去哪里？&quot;,&quot;shared.Search&quot;:&quot;搜索&quot;,&quot;checkin&quot;:&quot;入住&quot;,&quot;checkout&quot;:&quot;退房&quot;,&quot;shared.Check in&quot;:&quot;入住&quot;,&quot;shared.Check out&quot;:&quot;退房&quot;,&quot;clear_dates&quot;:&quot;清除日期&quot;,&quot;x_guests&quot;:&quot;%{smart_count}位房客&quot;,&quot;entire_home&quot;:&quot;整套房子&quot;,&quot;private_room&quot;:&quot;独立房间&quot;,&quot;shared_room&quot;:&quot;合住房间&quot;,&quot;number_of_guests&quot;:&quot;入住人数&quot;,&quot;room_type_0&quot;:&quot;整套房子/公寓&quot;,&quot;room_type_1&quot;:&quot;独立房间&quot;,&quot;room_type_2&quot;:&quot;合住房间&quot;,&quot;find_a_place&quot;:&quot;寻找住处&quot;,&quot;shared.x guests&quot;:&quot;%{smart_count}位房客&quot;,&quot;shared.When&quot;:&quot;时间&quot;,&quot;shared.Where&quot;:&quot;地点&quot;,&quot;shared.Guests&quot;:&quot;房客&quot;,&quot;search_bar.destination_city_address&quot;:&quot;目的地，城市，地址&quot;,&quot;guests&quot;:&quot;房客&quot;,&quot;room_type&quot;:&quot;房间类型&quot;,&quot;shared.Help Center&quot;:&quot;帮助中心&quot;,&quot;shared.Ask the Community&quot;:&quot;问一问社区&quot;,&quot;Back&quot;:&quot;返回&quot;,&quot;view this article in the help center&quot;:&quot;在帮助中心里阅读这篇文章&quot;,&quot;field_guide.error.no_load_topic&quot;:&quot;推荐的帮助文章打不开。请访问我们的%{link_start}帮助中心%{link_end}阅读该文章。&quot;,&quot;field_guide.no_results&quot;:&quot;没有找到结果&quot;,&quot;field_guide.suggested_actions&quot;:&quot;建议措施&quot;,&quot;field_guide.search_down&quot;:&quot;无法执行搜索，请稍后再试&quot;,&quot;field_guide.articles_result_title&quot;:&quot;与\&quot;%{query}\&quot;相关的文章&quot;,&quot;field_guide.search_result_title&quot;:&quot;“%{query}”的搜索结果&quot;,&quot;field_guide.suggested_articles&quot;:&quot;推荐的文章&quot;,&quot;field_guide.suggested_help_topics&quot;:&quot;建议的话题&quot;,&quot;field_guide.how_can_we_help&quot;:&quot;我们能帮上什么忙吗？&quot;,&quot;field_guide.welcome_name_how_can_we_help&quot;:&quot;欢迎您， %{first_name}！我们能帮上什么忙吗？&quot;,&quot;field_guide.welcome_how_can_we_help&quot;:&quot;欢迎您！我们能帮上什么忙吗？&quot;,&quot;field_guide.search_for_anything&quot;:&quot;搜索任何内容（预订房源，收款，评价）&quot;,&quot;field_guide.search_for_help&quot;:&quot;提问或使用关键词搜索&quot;,&quot;field_guide.cant_find_what_youre_looking_for&quot;:&quot;找不到您想要的？&quot;,&quot;help.Visit the Help Center&quot;:&quot;访问帮助中心&quot;,&quot;shared.Give feedback&quot;:&quot;提供反馈&quot;,&quot;help.Airbnb Help&quot;:&quot;Airbnb帮助&quot;,&quot;help_center.search.Host articles related to query&quot;:&quot;与“%{query}”相关的房东文章&quot;,&quot;help_center.search.Guest articles related to query&quot;:&quot;与“%{query}”相关的房客文章&quot;,&quot;help_center.search.X articles for query.v2&quot;:&quot;与“%{query}”相关的%{smart_count}篇文章&quot;,&quot;help_center.search.There are no results for query&quot;:&quot;没有“%{query}”的搜索结果&quot;,&quot;help_center.search.Help Center results for query&quot;:&quot;“%{query}”的帮助中心相关搜索结果&quot;,&quot;help_center.search.See all Help Center results&quot;:&quot;查看所有帮助中心结果&quot;,&quot;help_center.search.Community results for query&quot;:&quot;“%{query}”的社区相关搜索结果&quot;,&quot;help_center.search.See all Community Center results&quot;:&quot;查看全部社区中心结果&quot;,&quot;shared.Messages&quot;:&quot;消息&quot;,&quot;shared.Notifications&quot;:&quot;通知&quot;,&quot;shared.See all&quot;:&quot;查看所有&quot;,&quot;shared.View Dashboard&quot;:&quot;查看控制面板&quot;,&quot;shared.View Inbox&quot;:&quot;查看收件箱&quot;,&quot;notifications.Unread Messages In Inbox&quot;:&quot;您的收件箱中有%{smart_count}条未读消息。&quot;,&quot;notifications.Unread Messages In Inbox From Last 7 Days&quot;:&quot;您的收件箱中有%{smart_count}条上周的未读消息。&quot;,&quot;notifications.Additional Unread Messages&quot;:&quot;您还有%{smart_count}条未读消息。&quot;,&quot;notifications.Additional Unread Messages Last Week&quot;:&quot;您还有%{smart_count}条上周的未读消息。&quot;,&quot;notifications.5+ Notifications&quot;:&quot;您的%{link_start}控制面板%{link_end}有5+条新通知。&quot;,&quot;notifications.Read All Notifications&quot;:&quot;您的%{link_start}控制面板%{link_end}上有%{smart_count}个未读通知。&quot;,&quot;notifications.Read All Messages&quot;:&quot;没有新消息。您已全读过了！&quot;,&quot;notifications.Error&quot;:&quot;抱歉，现在无法加载消息。%{link_start}查看收件箱%{link_end}&quot;,&quot;airlock.title&quot;:&quot;安全检查&quot;,&quot;airlock.multi_friction_selection.title&quot;:&quot;帮助我们确保您的帐号安全。&quot;,&quot;airlock.multi_friction_selection.description&quot;:&quot;我们想确认试图访问您的帐号的是您本人。请选择以下方式中的一种来验证您自己的身份。&quot;,&quot;airlock.cvv_verification.multi_select_title&quot;:&quot;信用卡&quot;,&quot;airlock.cvv_verification.multi_select_helper&quot;:&quot;请输入安全码（这是免费的）&quot;,&quot;airlock.cvv_verification.title&quot;:&quot;信用卡验证&quot;,&quot;airlock.cvv_verification.verified&quot;:&quot;帐号已验证&quot;,&quot;airlock.cvv_verification.response.title&quot;:&quot;帮助我们确保您的帐号安全。&quot;,&quot;airlock.cvv_verification.response.description&quot;:&quot;我们想确认试图访问您帐号的是您本人。请输入您过去使用过的信用卡的安全码来验证您的身份。&quot;,&quot;airlock.cvv_verification.response.credit_card_label&quot;:&quot;信用卡&quot;,&quot;airlock.cvv_verification.response.security_code_label&quot;:&quot;安全码&quot;,&quot;airlock.cvv_verification.response.invalid&quot;:&quot;输入的值不正确！请再试一次｡&quot;,&quot;airlock.photo_id_verification.title&quot;:&quot;带照片的ID验证&quot;,&quot;airlock.photo_id_verification.option_selection.title&quot;:&quot;验证您的身份&quot;,&quot;airlock.photo_id_verification.option_selection.description&quot;:&quot;当您住在Airbnb房源的时候，您住的是别人的家。扫描您的政府ID，可以让房东在与您分享他们的个人空间时顾虑少些。&quot;,&quot;airlock.photo_id_verification.response.title&quot;:&quot;扫描您的ID&quot;,&quot;airlock.photo_id_verification.verified&quot;:&quot;帐号已验证&quot;,&quot;airlock.photo_id_verification.response.invalid&quot;:&quot;扫描您的ID时出现了错误。请再试一次。&quot;,&quot;airlock.captcha.thread_create.response.description&quot;:&quot;有时自动程序会滥用网站并尝试发送假信息给他人。完成下面的提示，證明您是一个想要发送此消息的真人。&quot;,&quot;airlock.captcha.response.invalid&quot;:&quot;请再次尝试完成以下提示。&quot;,&quot;airlock.phone_verification.multi_select_title&quot;:&quot;电话&quot;,&quot;airlock.phone_verification.multi_select_helper&quot;:&quot;通过电话或短信获取验证码&quot;,&quot;airlock.phone_verification.title&quot;:&quot;电话验证&quot;,&quot;airlock.phone_verification.option_selection.title&quot;:&quot;帮助我们确保您的帐号安全。&quot;,&quot;airlock.phone_verification.listing_activate.option_selection.title&quot;:&quot;我们需要您确认此更改。&quot;,&quot;airlock.phone_verification.payout_gibraltar_instrument_create.option_selection.title&quot;:&quot;我们需要您确认此更改。&quot;,&quot;airlock.phone_verification.option_selection.description&quot;:&quot;我们希望能够确认的确是您本人试图登录您的Airbnb帐号。我们将会给您之前已通过验证的手机号发送验证码。&quot;,&quot;airlock.phone_verification.listing_activate.option_selection.description&quot;:&quot;我们希望能够确认的确是您本人试图添加房源。我们将会给您之前已通过验证的手机号发送验证码。&quot;,&quot;airlock.phone_verification.payout_gibraltar_instrument_create.option_selection.description&quot;:&quot;我们希望能够确认的确是您本人试图添加收款方式。我们将会给您之前已通过验证的手机号发送验证码。&quot;,&quot;airlock.phone_verification.option_selection.how&quot;:&quot;我们该怎么把验证码发送给您？&quot;,&quot;airlock.phone_verification.option_selection.where&quot;:&quot;我们该把验证码发送到哪里？&quot;,&quot;airlock.phone_verification.response.title&quot;:&quot;输入4位数的验证码。&quot;,&quot;airlock.phone_verification.We sent a code to your phone number&quot;:&quot;我们已将验证码发送到您尾数为%{last_four_digits}的手机号上。&quot;,&quot;airlock.phone_verification.Depending on your provider&quot;:&quot;取决于您的供应商，可能需要几分钟才会收到。&quot;,&quot;airlock.phone_verification.We will wait right here&quot;:&quot;我们会在这里等着。&quot;,&quot;airlock.phone_verification.Send me a text message&quot;:&quot;发短信给我&quot;,&quot;airlock.phone_verification.Call me&quot;:&quot;打电话给我&quot;,&quot;airlock.api_error&quot;:&quot;处理您请求时出现了错误。请再次尝试。&quot;,&quot;airlock.phone_verification.Phone number ending in&quot;:&quot;以%{last_four}结尾的电话号码&quot;,&quot;airlock.phone_verification.Enter Your Code&quot;:&quot;输入验证码&quot;,&quot;airlock.phone_verification.response.invalid&quot;:&quot;看来您输入的验证码不正确。&quot;,&quot;airlock.email_verification.multi_select_title&quot;:&quot;电子邮件&quot;,&quot;airlock.email_verification.multi_select_helper&quot;:&quot;获取验证邮件&quot;,&quot;airlock.phone_verification_or_email_verification.title&quot;:&quot;电话验证&quot;,&quot;airlock.phone_verification_or_email_verification.option_selection.title&quot;:&quot;帮助我们确保您的帐号安全。&quot;,&quot;airlock.phone_verification_or_email_verification.option_selection.description&quot;:&quot;我们希望能够确认确实是您本人试图访问您的Airbnb帐号。为此，我们将会给您的手机发送一个安全码，或者给您发送一封确认邮件。&quot;,&quot;airlock.phone_verification_or_email_verification.option_selection.how&quot;:&quot;我们该怎么把验证码发送给您？&quot;,&quot;airlock.phone_verification_or_email_verification.option_selection.where&quot;:&quot;我们该把验证码发送到哪里？&quot;,&quot;airlock.phone_verification_or_email_verification.response.title&quot;:&quot;输入4位数的验证码。&quot;,&quot;airlock.phone_verification_or_email_verification.We sent a code to your phone number&quot;:&quot;我们已将验证码发送到您尾数为%{last_four_digits}的手机号上。&quot;,&quot;airlock.phone_verification_or_email_verification.Depending on your provider&quot;:&quot;取决于您的供应商，可能需要几分钟才能到达。&quot;,&quot;airlock.phone_verification_or_email_verification.We will wait right here&quot;:&quot;我们就在这里等。&quot;,&quot;airlock.phone_verification_or_email_verification.Send me a text message&quot;:&quot;发短信给我&quot;,&quot;airlock.phone_verification_or_email_verification.Call me&quot;:&quot;打电话给我&quot;,&quot;airlock.phone_verification_or_email_verification.Phone number ending in&quot;:&quot;以%{last_four}结尾的电话号码&quot;,&quot;airlock.phone_verification_or_email_verification.Enter Your Code&quot;:&quot;输入您的优惠券代码&quot;,&quot;airlock.phone_verification_or_email_verification.response.invalid&quot;:&quot;看起来您输入的验证码不正确。&quot;,&quot;airlock.identity_info_confirmation.response.confirm_details&quot;:&quot;确认详情&quot;,&quot;airlock.identity_info_confirmation.response.make_sure_details_are_correct&quot;:&quot;请花一点时间确认您的帐户信息依然正确｡&quot;,&quot;airlock.identity_info_confirmation.response.name&quot;:&quot;姓名&quot;,&quot;airlock.identity_info_confirmation.response.first_name&quot;:&quot;名字&quot;,&quot;airlock.identity_info_confirmation.response.last_name&quot;:&quot;姓氏&quot;,&quot;airlock.identity_info_confirmation.response.email&quot;:&quot;电子邮件地址&quot;,&quot;airlock.identity_info_confirmation.response.birthday&quot;:&quot;生日&quot;,&quot;airlock.identity_info_confirmation.response.birthday_month&quot;:&quot;月&quot;,&quot;airlock.identity_info_confirmation.response.birthday_day&quot;:&quot;日&quot;,&quot;airlock.identity_info_confirmation.response.birthday_year&quot;:&quot;年&quot;,&quot;airlock.identity_info_confirmation.response.confirm_and_continue&quot;:&quot;确认并继续&quot;,&quot;airlock.identity_info_confirmation.response.you_are_X_years_old&quot;:&quot;您已经表明您的年龄是%{emphasis_start}%{smart_count}岁%{emphasis_end}。&quot;,&quot;airlock.identity_info_confirmation.response.is_this_age_correct&quot;:&quot;正确吗？&quot;,&quot;airlock.identity_info_confirmation.response.not_correct_change_my_birthday&quot;:&quot;不，更改我的生日&quot;,&quot;airlock.identity_info_confirmation.response.yes_my_birthday_is_correct&quot;:&quot;是的，正确&quot;,&quot;airlock.password_reset.response.title&quot;:&quot;来更改您的密码吧。&quot;,&quot;airlock.password_reset.response.description&quot;:&quot;更改密码可以轻松确保帐号的安全。现在就这么办吧。&quot;,&quot;airlock.password_reset.response.current_password&quot;:&quot;当前密码&quot;,&quot;airlock.password_reset.response.new_password&quot;:&quot;新密码&quot;,&quot;airlock.password_reset.response.confirm_new_password&quot;:&quot;确认新密码&quot;,&quot;airlock.password_reset.Next&quot;:&quot;更改密码&quot;,&quot;airlock.email_verification.option_selection.title&quot;:&quot;请确认您的邮箱&quot;,&quot;airlock.email_verification.option_selection.description&quot;:&quot;我们会将一封帐号验证邮件发送至：%{linebreak} %{user_email} %{linebreak} %{linebreak} 如果您在收取过程中遇到了问题，请务必检查您的垃圾邮件文件夹。&quot;,&quot;airlock.email_verification.response.title&quot;:&quot;查看您的电子邮件&quot;,&quot;airlock.email_verification.response.description&quot;:&quot;我们已经将邮件发送至%{linebreak} %{user_email} %{linebreak} %{linebreak}一旦确认了邮箱地址，您就可以开始了。&quot;,&quot;airlock.email_verification.response.Next&quot;:&quot;完成&quot;,&quot;airlock.email_verification.cant_get_to_email&quot;:&quot;无法查看电子邮件？&quot;,&quot;airlock.email_verification.let_us_know&quot;:&quot;告诉我们。&quot;,&quot;airlock.device_association_email_verification.option_selection.title&quot;:&quot;请验证您的设备&quot;,&quot;airlock.device_association_email_verification.option_selection.description&quot;:&quot;为了保障您的帐号安全，我们将向以下邮箱发送一封设备验证邮件： %{linebreak} %{user_email} %{linebreak} %{linebreak}如果您没有收到这封邮件，请务必查看垃圾邮件文件夹。%{linebreak} %{linebreak}要验证您的设备，请在您当前使用的设备浏览器中打开该链接。&quot;,&quot;airlock.device_association_email_verification.response.title&quot;:&quot;查看您的电子邮件&quot;,&quot;airlock.device_association_email_verification.response.description&quot;:&quot;我们刚刚向%{linebreak} %{user_email}%{linebreak}邮箱发送了一封设备确认邮件。 %{linebreak}要验证您的设备，请在您%{emphasis_start}当前使用的设备浏览器%{emphasis_end}中打开该链接。&quot;,&quot;airlock.device_association_email_verification.response.Next&quot;:&quot;完成&quot;,&quot;airlock.device_association_email_verification.cant_get_to_email&quot;:&quot;无法查看电子邮件？&quot;,&quot;airlock.device_association_email_verification.let_us_know&quot;:&quot;告诉我们。&quot;,&quot;airlock.account_disabled.introduction.title&quot;:&quot;帐号已禁用&quot;,&quot;airlock.account_disabled.introduction.introduction&quot;:&quot;为了保护您的信息，我们暂时屏蔽了您的Airbnb帐号。&quot;,&quot;airlock.account_disabled.introduction.description&quot;:&quot;要恢复访问权限，请用您的Airbnb帐号关联邮箱地址发送电子邮件至 account.disabled@airbnb.com。&quot;,&quot;airlock.no_phone_access.introduction.title&quot;:&quot;发邮件给我们会需要更长时间。&quot;,&quot;airlock.no_phone_access.introduction.introduction&quot;:&quot;出于安全考虑，Airbnb手动确认此更改可能需要1-2天时间。请用您的Airbnb帐号关联邮箱地址发邮件至 &lt;a href=\&quot;mailto:account.disabled@airbnb.com\&quot;&gt;account.disabled@airbnb.com&lt;/a&gt;，然后让我们来处理吧。&quot;,&quot;airlock.no_phone_access.introduction.tip.title&quot;:&quot;用您的电话加快更新流程&quot;,&quot;airlock.no_phone_access.introduction.tip.description&quot;:&quot;如果您出门在外或者您的电话正好不在身边，等您拿到电话以后再尝试进行这一更新。&quot;,&quot;airlock.no_phone_access.Send Me a Code&quot;:&quot;给我发送验证码&quot;,&quot;airlock.no_email_access.introduction.title&quot;:&quot;发邮件给我们会需要更长时间。&quot;,&quot;airlock.no_email_access.introduction.introduction&quot;:&quot;出于安全考虑，Airbnb手动确认此更改可能需要1-2天时间。请用您的Airbnb帐号关联邮箱地址发邮件至&lt;a href=\&quot;mailto:account.disabled@airbnb.com\&quot;&gt;account.disabled@airbnb.com&lt;/a&gt;，然后让我们来处理吧。&quot;,&quot;airlock.no_email_access.introduction.tip.title&quot;:&quot;用您的电话更快进行这一更新&quot;,&quot;airlock.no_email_access.introduction.tip.description&quot;:&quot;如果您出门在外或者您的电话正好不在身边，等您拿到电话以后再尝试进行这一更新。&quot;,&quot;airlock.contact_us.response.title&quot;:&quot;联系我们&quot;,&quot;airlock.contact_us.response.description&quot;:&quot;为了您的安全，我们想进一步核实您的帐号。请通过&lt;a href=\&quot;mailto:account.disabled@airbnb.com\&quot;&gt;account.disabled@airbnb.com&lt;/a&gt;联系我们。&quot;,&quot;airlock.chargeback_appeal.introduction.title&quot;:&quot;我们需要一些额外的信息&quot;,&quot;airlock.chargeback_appeal.introduction.description&quot;:&quot;为了保证Airbnb社区的安全，请确认您已获授权使用%{formatted_cc}。如果选择继续，我们将需要您提供一份此付款方式的银行卡对账单。&quot;,&quot;airlock.chargeback_appeal.response.title&quot;:&quot;请上传银行卡对账单&quot;,&quot;airlock.chargeback_appeal.response.description&quot;:&quot;您可以遮住账户余额、非Airbnb交易和账户号码，只要能看到您的全名和银行卡的最后四位数便可。您可以在我们完成对您的对账单的审核并批准您的付款方式后的24小时内重新预订。&quot;,&quot;airlock.chargeback_appeal.response.upload_prompt&quot;:&quot;上传对账单&quot;,&quot;airlock.chargeback_appeal.response.payment_method_attempted&quot;:&quot;已尝试的付款方式&quot;,&quot;airlock.chargeback_appeal.response.reupload_prompt&quot;:&quot;重新上传对账单&quot;,&quot;airlock.chargeback_appeal.response.accepted_file_types&quot;:&quot;您可以在发卡机构的网站上找到您的对账单，然后上传对账单的照片或PDF文件。&quot;,&quot;airlock.chargeback_appeal.response.upload_image_too_big&quot;:&quot;您的照片大于5mb。请使用较小的照片再试一次。&quot;,&quot;airlock.chargeback_appeal.response.sorry_something_went_wrong&quot;:&quot;非常抱歉，出现了错误。&quot;,&quot;airlock.chargeback_appeal_submitted.introduction.title&quot;:&quot;请在审核期间耐心等候，谢谢！&quot;,&quot;airlock.chargeback_appeal_submitted.introduction.description&quot;:&quot;我们会在24小时内通知您，您是否有权使用%{formatted_cc}预订%{hosting_name}。您暂时不需要进行任何操作。&quot;,&quot;airlock.chargeback_appeal_under_review.introduction.title&quot;:&quot;您需要等待一段时间才能预订&quot;,&quot;airlock.chargeback_appeal_under_review.introduction.description&quot;:&quot;我们目前正在审核您的银行卡对账单。您暂时不需要进行任何操作。&quot;,&quot;airlock.chargeback_appeal_denied.introduction.title&quot;:&quot;您的帐号已被暂停使用&quot;,&quot;airlock.chargeback_appeal_denied.introduction.description&quot;:&quot;经过仔细审核后，我们还是无法验证您的付款方式。如果您想对此决定提出申诉，请发邮件至&lt;a href=\&quot;mailto:account.disable@airbnb.com\&quot;&gt;account.disable@airbnb.com联系我们&quot;,&quot;airlock.chargeback_appeal_android.introduction.title&quot;:&quot;我们需要一些额外的信息&quot;,&quot;airlock.chargeback_appeal_android.introduction.description&quot;:&quot;为了保证Airbnb社区的安全，请确认您已获授权使用%{formatted_cc}。如果选择继续，我们将需要您提供一份此付款方式的银行卡对账单。&quot;,&quot;airlock.chargeback_appeal_android.response.title&quot;:&quot;请在网页浏览器中继续接下来的步骤&quot;,&quot;airlock.chargeback_appeal_android.response.description&quot;:&quot;要完成您的付款方式的验证，您需要在网页浏览器中登录Airbnb帐号并重新预订。重新提交预订申请后，系统将会再次提醒您提交您的银行卡对账单。不用担心，我们会一步步指导您完成此过程。&quot;,&quot;airlock.contact_us_chargeback.response.title&quot;:&quot;联系我们&quot;,&quot;airlock.contact_us_chargeback.response.description&quot;:&quot;我们密切关注Airbnb上的所有预订和用户交流。遗憾的是，由于担心您的付款方式的有效性，我们已经禁用了您的帐号。请发邮件至&lt;a href=\&quot;mailto:account.enable@airbnb.com\&quot;&gt;account.enable@airbnb.com&lt;/a&gt;对我们的决定提出上诉，并重新启用您的帐号。&quot;,&quot;airlock.introduction&quot;:&quot;若要继续操作，我们想请您完成几个挑战。&quot;,&quot;airlock.Get Started&quot;:&quot;开始吧&quot;,&quot;airlock.Continue&quot;:&quot;继续&quot;,&quot;airlock.Next&quot;:&quot;下一步&quot;,&quot;airlock.Done&quot;:&quot;完成&quot;,&quot;airlock.Submit&quot;:&quot;提交&quot;,&quot;airlock.Back&quot;:&quot;返回&quot;,&quot;airlock.OK&quot;:&quot;OK&quot;,&quot;airlock.Email Airbnb&quot;:&quot;发电子邮件给Airbnb&quot;,&quot;airlock.Start Over&quot;:&quot;重新开始&quot;,&quot;airlock.success.Thanks&quot;:&quot;%{first_name}，谢谢&quot;,&quot;airlock.success.You are done&quot;:&quot;完成更改！现在您可以去忙其他事情了。&quot;,&quot;have_a_moment&quot;:&quot;有时间吗?&quot;,&quot;help_make_experience_better&quot;:&quot;回答简短的问卷调查，帮助我们让您的Airbnb体验更加精彩。&quot;,&quot;lets_do_this&quot;:&quot;让我们开始吧！&quot;,&quot;thanks_for_helping&quot;:&quot;感谢您帮助我们！&quot;,&quot;thanks_for_providing_feedback&quot;:&quot;感谢您的反馈&quot;,&quot;fill_out_survey&quot;:&quot;如果您可以很快地填写一下这个调查，我们会非常感谢。&quot;,&quot;surveyair_cancel&quot;:&quot;取消&quot;,&quot;surveyair_submit&quot;:&quot;提交&quot;,&quot;surveyair_next&quot;:&quot;下一步&quot;,&quot;surveyair_back&quot;:&quot;返回&quot;,&quot;surveyair_pagination&quot;:&quot;%{currentPage}／%{totalNumPages}页&quot;,&quot;surveyair_strongly_disagree&quot;:&quot;强烈反对&quot;,&quot;surveyair_disagree&quot;:&quot;不同意&quot;,&quot;surveyair_neutral&quot;:&quot;一般&quot;,&quot;surveyair_agree&quot;:&quot;同意&quot;,&quot;surveyair_strongly_agree&quot;:&quot;非常同意&quot;,&quot;surveyair_no_answer&quot;:&quot;没有答案&quot;,&quot;surveyair_very_difficult&quot;:&quot;非常困难&quot;,&quot;surveyair_difficult&quot;:&quot;困难&quot;,&quot;surveyair_easy&quot;:&quot;容易&quot;,&quot;surveyair_very_easy&quot;:&quot;非常简单&quot;,&quot;surveyair_feedback_sent&quot;:&quot;Feedback sent! Thanks for sharing your experience with us.&quot;,&quot;surveyair_go_to_airbnb&quot;:&quot;前往Airbnb&quot;,&quot;shared.Close this modal&quot;:&quot;关闭此模式&quot;,&quot;your_trips.x_guest(s)&quot;:&quot;%{smart_count}位房客&quot;,&quot;your_trips.x_listing(s)&quot;:&quot;%{smart_count}个房源&quot;,&quot;shared.Trips&quot;:&quot;旅程&quot;,&quot;header.View Trips&quot;:&quot;查看旅程&quot;,&quot;header.View Wish Lists&quot;:&quot;查看心愿单&quot;,&quot;header.You Have X Wish List(s)&quot;:&quot;您有%{smart_count}个心愿单&quot;,&quot;header.X home(s)&quot;:&quot;%{smart_count}个房源&quot;,&quot;header.Popular Wish Lists&quot;:&quot;人气心愿单&quot;,&quot;your_trips.Error&quot;:&quot;很抱歉,我们目前无法加载旅程更新。%{link_start}查看旅程%{link_end}&quot;,&quot;reservation_status.timedout&quot;:&quot;已过期&quot;,&quot;shared.Wish Lists&quot;:&quot;心愿单&quot;,&quot;header.Create a wish list&quot;:&quot;创建心愿单&quot;,&quot;header.No wish list created&quot;:&quot;没有已创建的心愿单&quot;,&quot;header.No upcoming trips&quot;:&quot;没有即将开始的旅程&quot;,&quot;header.Continue searching in (x)&quot;:&quot;继续在%{location}搜索&quot;,&quot;create_new_wish_list&quot;:&quot;创建新的心愿单&quot;,&quot;wish_list_name&quot;:&quot;心愿单名称&quot;,&quot;priv.everyone&quot;:&quot;每个人&quot;,&quot;priv.invite_only&quot;:&quot;仅限受邀用户&quot;,&quot;priv.privacy_settings&quot;:&quot;隐私设置&quot;,&quot;priv.everyone_description&quot;:&quot;所有人都看得到，并会出现在您的Airbnb公开个人资料页面上。&quot;,&quot;priv.invite_only_description&quot;:&quot;只有您和您邀请的好友可以看到。&quot;,&quot;shared.Save&quot;:&quot;保存&quot;,&quot;shared.Cancel&quot;:&quot;取消&quot;,&quot;community_commitment.before_you_join_airbnb&quot;:&quot;在加入之前&quot;,&quot;community_commitment.before_you_continue_with_what_you_were_doing&quot;:&quot;在继续操作之前&quot;,&quot;community_commitment.welcoming_guests_starts_with_this_commitment&quot;:&quot;欢迎房客从这里开始&quot;,&quot;community_commitment.please_take_a_moment_to_read_this_commitment&quot;:&quot;请花一点时间阅读这些内容&quot;,&quot;community_commitment.please_commit_to_respecting_and_including_everyone&quot;:&quot;不论您是首次使用Airbnb，还是我们之前的用户，请承诺尊重和接纳Airbnb社区的每一位成员。&quot;,&quot;community_commitment.hosts_are_responsible_for_welcoming_people_of_all_backgrounds&quot;:&quot;作为一名Airbnb房东，从您考虑是否接受某个预订，到您第一次接待房客，您都有责任欢迎所有背景的人。请花一些时间阅读此承诺的内容。&quot;,&quot;community_commitment.all_existing_hosts_must_confirm_commitment&quot;:&quot;我们请所有的房东作出承诺，欢迎任何背景的房客。&quot;,&quot;community_commitment.i_agree_to_treat_everyone_without_bias&quot;:&quot;我承诺尊重这个社区的所有成员，不论对方的种族、宗教、国籍、民族、残障状况、性别、性别认同、性取向或年龄，皆不对他们妄加判断，也不会怀有偏见。&quot;,&quot;community_commitment.accept_the_agreement&quot;:&quot;接受&quot;,&quot;community_commitment.decline_the_agreement&quot;:&quot;拒绝&quot;,&quot;community_commitment.cancel_your_account?&quot;:&quot;取消您的帐号？&quot;,&quot;community_commitment.cancel_signing_up_on_airbnb?&quot;:&quot;取消注册？&quot;,&quot;community_commitment.declining_the_commitment_cancels_your_account&quot;:&quot;拒绝此项承诺意味着您的Airbnb账号将被注销，您未来的预订也将被取消。&quot;,&quot;community_commitment.declining_the_commitment_means_you_will_not_have_an_account&quot;:&quot;拒绝此项承诺意味着您将无法拥有Airbnb账号，只能浏览本网站。&quot;,&quot;community_commitment.why_did_airbnb_create_this_commitment?&quot;:&quot;Airbnb为什么会下此承诺？&quot;,&quot;community_commitment.important_step_toward_creating_a_global_community&quot;:&quot;这项承诺是我们向建设全球化社区、让每个人都真正拥有归属感的目标所迈出的重要一步。歧视让房东、房客以及他们的家庭感到不被接纳、不受欢迎，对此我们决不能容忍。要建设一个让每个人都拥有归属感的Airbnb，就需要我们社区中的每个人都能理解这一使命，并愿意帮助我们实现这一目标。&quot;,&quot;community_commitment.what_happens_to_my_future_reservations_if_I_decline?&quot;:&quot;如果拒绝此项承诺，我未来的预订会如何处理？&quot;,&quot;community_commitment.your_future_reservations_will_be_canceled_if_you_decline&quot;:&quot;所有未来的预订都会被取消。&quot;,&quot;community_commitment.your_reservation_will_be_refunded_according_to_policy&quot;:&quot;您将根据房东的退订政策获得相应的预订退款。&quot;,&quot;shared.learn_more_sentence_link&quot;:&quot;%{link_start}了解更多信息%{link_end}。&quot;,&quot;community_commitment.future_reservations_will_be_canceled_with_guest_refunds&quot;:&quot;所有未来的预订将会被取消，房客将获得全额退款。&quot;,&quot;community_commitment.if_booked_as_a_guest_future_reservations_will_be_canceled&quot;:&quot;如果您以房客身份预订了住宿，那么所有未来的预订都将被取消。&quot;,&quot;community_commitment.what_if_laws_restrict_hosting_certain_guests?&quot;:&quot;如果我所在地区的法律限制我接待某些特定的房客，我该怎么办？&quot;,&quot;community_commitment.please_post_legal_restrictions_on_your_listing&quot;:&quot;请在您的房源页面上列出这些限制，但是同时请明确指出，这是您所在地区的法律规定，您需要遵守当地法律。&quot;,&quot;community_commitment.what_if_i_have_safety_concerns_as_a_host?&quot;:&quot;作为房东，如果我对于接受任何人的预订有安全顾虑，该怎么办？&quot;,&quot;community_commitment.if_you_host_shared_space_you_can_restrict_to_same_gender_guests&quot;:&quot;如果您想与房客分享居住空间，您可以选择只允许和您同性别的房客预订。&quot;,&quot;community_commitment.you_may_turn_down_guests_for_non_discriminatory_reasons&quot;:&quot;根据此政策，您可以出于其他原因拒绝接待某些房客，但这些原因不能与种族丶宗教丶国籍丶民族丶性取向或年龄有关。&quot;,&quot;community_commitment.reflect_on_reasoning_to_avoid_bias_when_considering_requests&quot;:&quot;总之，当您考虑是否接受某个预订申请时，请认真思考您的决定理由，确保您未受偏见影响。&quot;,&quot;community_commitment.what_if_i_change_my_mind_after_declining_the_commitment?&quot;:&quot;如果在拒绝之后我又改变主意，该怎么办？&quot;,&quot;community_commitment.we_will_send_you_info_about_how_to_reinstate_your_account&quot;:&quot;取消帐号之后，我们将向您发送如何在改变主意后恢复账号的相关信息。届时您仍需要接受此承诺。&quot;,&quot;community_commitment.you_can_sign_up_again_if_you_cancel_your_account&quot;:&quot;取消帐号之后，如果您的想法发生了改变，您随时都可以重新注册。届时您仍需要接受此承诺。&quot;,&quot;community_commitment.how_can_i_share_feedback_about_the_commitment?&quot;:&quot;我可以如何分享对此承诺的反馈意见？&quot;,&quot;community_commitment.send_us_your_feedback_via_email&quot;:&quot;欢迎您提供反馈，如有意见请发送至%{email_address}。&quot;,&quot;community_commitment.cancel_signup_call_to_action&quot;:&quot;取消注册&quot;,&quot;community_commitment.cancel_my_account_call_to_action&quot;:&quot;取消我的帐号&quot;,&quot;shared.Go back&quot;:&quot;返回&quot;,&quot;generic_error.sorry_something_went_wrong_please_try_again&quot;:&quot;抱歉，出错了。请重试。&quot;,&quot;community_commitment.confirmation_of_signup_cancellation&quot;:&quot;注册流程已取消&quot;,&quot;community_commitment.confirmation_of_account_cancellation&quot;:&quot;您的帐号已取消&quot;,&quot;community_commitment.we_welcome_feedback_on_why_you_declined_the_commitment&quot;:&quot;欢迎您提供反馈，告诉我们您拒绝的原因。&quot;,&quot;community_commitment.send_your_feedback_call_to_action&quot;:&quot;发送反馈&quot;,&quot;shared.Skip&quot;:&quot;跳过&quot;,&quot;community_commitment.thanks_for_your_feedback_on_the_commitment&quot;:&quot;感谢您的反馈！&quot;,&quot;community_commitment.your_signup_to_airbnb_was_canceled&quot;:&quot;您的注册已取消。&quot;,&quot;community_commitment.your_airbnb_account_has_been_canceled&quot;:&quot;您的帐号已取消&quot;,&quot;community_commitment.although_your_account_was_canceled_you_can_still_browse_the_site&quot;:&quot;不过，您可以继续浏览网站。&quot;,&quot;shared.Log_in&quot;:&quot;登录&quot;,&quot;must_log_in&quot;:&quot;您必须登录后才能继续&quot;,&quot;log_in_to_save&quot;:&quot;登录以将它保存到心愿单。&quot;,&quot;concur.link_your_account&quot;:&quot;关联您的Concur帐号&quot;,&quot;concur.sign_up&quot;:&quot;注册使用Airbnb旅行，并通过Concur来查看您的旅程和花费。&quot;,&quot;shared.Sign up with email&quot;:&quot;通过邮箱注册&quot;,&quot;shared.Continue with Email&quot;:&quot;使用邮箱&quot;,&quot;shared.Create Account&quot;:&quot;创建帐号&quot;,&quot;shared.Google&quot;:&quot;谷歌&quot;,&quot;shared.Facebook&quot;:&quot;Facebook&quot;,&quot;shared.Onelogin&quot;:&quot;Onelogin&quot;,&quot;signup_method.continue_with_service&quot;:&quot;使用%{service_name}帐号登录&quot;,&quot;signup_method.signup_with_service&quot;:&quot;使用%{service_name}帐号注册&quot;,&quot;login_method.login_with_service&quot;:&quot;使用%{service_name}帐号登录&quot;,&quot;shared.Sign up with Facebook&quot;:&quot;通过Facebook注册&quot;,&quot;shared.Sign up with WeChat&quot;:&quot;使用微信帐号注册&quot;,&quot;shared.Sign up with Weibo&quot;:&quot;通过新浪微博注册&quot;,&quot;shared.Sign up with Google&quot;:&quot;通过谷歌注册&quot;,&quot;shared.Log in with WeChat&quot;:&quot;使用微信登录&quot;,&quot;shared.Log in with Weibo&quot;:&quot;使用新浪微博登录&quot;,&quot;shared.Log in with Facebook&quot;:&quot;通过Facebook帐号登录&quot;,&quot;shared.Log in with Onelogin&quot;:&quot;Log in with Onelogin&quot;,&quot;shared.Log in with Google&quot;:&quot;通过谷歌帐号登录&quot;,&quot;user.signup.already_member&quot;:&quot;已经是Airbnb会员？&quot;,&quot;shared.generic_tos_ndp_acceptance_2016&quot;:&quot;注册帐号即表示我同意Airbnb的%{terms_of_service_link}、%{nondiscrimination_policy_link}、%{payments_terms_link}、%{privacy_policy_link}、%{guest_refund_policy_link}和%{host_guarantee_terms_link}。&quot;,&quot;shared.Terms of Service&quot;:&quot;服务条款&quot;,&quot;terms.Nondiscrimination Policy&quot;:&quot;quot;非歧视政策&quot;,&quot;shared.Payments Terms of Service&quot;:&quot;支付服务条款&quot;,&quot;shared.Privacy_Policy&quot;:&quot;隐私政策&quot;,&quot;shared.Guest Refund Policy&quot;:&quot;房客退款政策&quot;,&quot;shared.Host_Guarantee_Terms&quot;:&quot;房东保障金计划条款&quot;,&quot;shared.or&quot;:&quot;或&quot;,&quot;shared.Learn_more&quot;:&quot;了解更多&quot;,&quot;Email Address&quot;:&quot;电子邮件地址&quot;,&quot;shared.Remember me&quot;:&quot;自动登录&quot;,&quot;user.signup.forgot_password_moweb&quot;:&quot;无法登录？&quot;,&quot;signup.use phone number instead&quot;:&quot;改用电话号码&quot;,&quot;user.signup.no account yet&quot;:&quot;还没有帐号？&quot;,&quot;shared.Sign up&quot;:&quot;注册&quot;,&quot;signup.other methods&quot;:&quot;使用其他方式&quot;,&quot;First name&quot;:&quot;名字&quot;,&quot;Last name&quot;:&quot;姓氏&quot;,&quot;Email address&quot;:&quot;电子邮件地址&quot;,&quot;Confirm Password&quot;:&quot;确认密码&quot;,&quot;Work email&quot;:&quot;工作邮箱&quot;,&quot;tooltip.signup_form.work_email&quot;:&quot;我们将会使用这个邮箱把您添加至您公司的商务Airbnb帐号。&quot;,&quot;user.signup.opt_in_emails.coupons&quot;:&quot;我想要收到优惠券和出游灵感&quot;,&quot;Birthday&quot;:&quot;生日&quot;,&quot;user.signup.validation.birthday.must be 18 or older&quot;:&quot;必须年满18岁才能注册Airbnb帐号。其他用户看不到您的生日。&quot;,&quot;user.birthday.month&quot;:&quot;月&quot;,&quot;user.birthday.day&quot;:&quot;日&quot;,&quot;user.birthday.year&quot;:&quot;年&quot;,&quot;signup.Sign up with Phone Number&quot;:&quot;用电话号码注册&quot;,&quot;signup.use email instead&quot;:&quot;改用邮箱&quot;,&quot;signup.Enter 4 digit code&quot;:&quot;请输入四位验证码&quot;,&quot;signup.Input your confirmation code&quot;:&quot;我们发送了一条短信到%{mobile_number}。请输入短信中的验证码。&quot;,&quot;signup.change my number&quot;:&quot;更改我的电话号码&quot;,&quot;signup.Send code again&quot;:&quot;再次发送验证码&quot;,&quot;shared.Phone number&quot;:&quot;电话号码&quot;,&quot;auth_merge.error&quot;:&quot;嗨！您使用邮箱注册了Airbnb，因此请使用该信息登录。&quot;,&quot;auth_merge.password&quot;:&quot;请输入密码。&quot;,&quot;auth_merge.signup_with_existing_email&quot;:&quot;看样子您已经拥有此帐号。请用此账号登录。&quot;,&quot;auth_merge.signup_with_existing_facebook_account&quot;:&quot;您已经通过Facebook创建了帐号。请登录。&quot;,&quot;auth_merge.signup_with_existing_google_account&quot;:&quot;您已经使用谷歌帐号创建了Airbnb帐号。请使用该帐号登录。&quot;,&quot;auth_merge.reset_password&quot;:&quot;重置密码&quot;,&quot;auth_merge.login_with_different_account&quot;:&quot;使用不同的帐号登录&quot;,&quot;auth_merge.email_login_via_signup&quot;:&quot;你已经拥有该账号。我们将你登录，而不是新建账号。下一次，请选择\&quot;登陆”选项。&quot;,&quot;signup.account_not_exist_confirm_create&quot;:&quot;我们没有找到与%{email}关联的Airbnb帐号。您想创建一个新帐号吗？&quot;,&quot;signup.create_new_account&quot;:&quot;创建新帐号&quot;,&quot;signup.already_have_account&quot;:&quot;已经拥有Airbnb帐号了？&quot;,&quot;shared.china_transparency_signup_terms_cutover&quot;:&quot;自12月07日起，如果我是中国居民，我将与Airbnb中国签约，我的信息将按照中国的相关法律法规储存和处理，包括隐私及信息披露条款。&quot;,&quot;shared.china_transparency_signup_terms&quot;:&quot;如果我是中国居民，我将与Airbnb中国签约，而且我的信息会根据中国的法律被储存和处理，这些法律包括隐私和信息披露方面的法律。&quot;,&quot;shared.Take me back to my last search results&quot;:&quot;返回搜索结果&quot;,&quot;referrals.travel_credit_available_explanation&quot;:&quot;您的%{tag_start}%{credit_amount}旅行基金%{tag_end}将会自动应用于您的第一笔%{min_trip_cost}或以上的住宿。&quot;,&quot;referrals.coupon_expires_at&quot;:&quot;有效期：%{expiration_date}&quot;,&quot;referrals.see_terms_and_conditions&quot;:&quot;查看条款&quot;,&quot;choose_language&quot;:&quot;选择语言&quot;,&quot;choose_currency&quot;:&quot;选择货币&quot;,&quot;datepicker_updated_years_ago&quot;:&quot;%{smart_count}年前更新&quot;,&quot;datepicker_updated_months_ago&quot;:&quot;%{smart_count}个月前更新&quot;,&quot;datepicker_updated_days_ago&quot;:&quot;%{smart_count}天前更新&quot;,&quot;datepicker_updated_today&quot;:&quot;今天更新&quot;,&quot;datepicker_never_updated&quot;:&quot;从未更新&quot;,&quot;datepicker_min_nights&quot;:&quot;最少入住%{smart_count}晚&quot;,&quot;datepicker_min_nights_this_month&quot;:&quot;本月最少%{smart_count}晚&quot;,&quot;datepicker_min_nights_varies&quot;:&quot;最短住宿天数因人而异&quot;,&quot;sorry_something_went_wrong&quot;:&quot;很抱歉，出错了。请刷新页面并重试。&quot;,&quot;checkin_input_format&quot;:&quot;请以%{default_format}的格式输入您的入住日期&quot;,&quot;checkout_input_format&quot;:&quot;请以%{default_format}的格式输入您的退房日期&quot;}" id="_bootstrap-phrases" />
+<meta content="{&quot;engagement/overlay_panel1.jpg&quot;:&quot;https://a2.muscache.com/airbnb/static/engagement/overlay_panel1-457ef05a7508fd8b5f8eeaf251e29d1d.jpg&quot;,&quot;engagement/overlay_panel2.jpg&quot;:&quot;https://a2.muscache.com/airbnb/static/engagement/overlay_panel2-e527fcc4de6fccdc96feb6d70f8c58f2.jpg&quot;,&quot;engagement/overlay_panel3.jpg&quot;:&quot;https://a0.muscache.com/airbnb/static/engagement/overlay_panel3-f7b1e2d0007f6298c069df4dcce311db.jpg&quot;,&quot;engagement/overlay_panel4.jpg&quot;:&quot;https://a0.muscache.com/airbnb/static/engagement/overlay_panel4-bf9eb62d4e8befc4d7a41a520a3dcad3.jpg&quot;,&quot;engagement/overlay_panel5.jpg&quot;:&quot;https://a1.muscache.com/airbnb/static/engagement/overlay_panel5-cdcad426b1dd8956d9b0ff454dd4441e.jpg&quot;,&quot;engagement/overlay_panel6.jpg&quot;:&quot;https://a0.muscache.com/airbnb/static/engagement/overlay_panel6-04171448ba4eb0337d06cb9aa1a22559.jpg&quot;,&quot;engagement/overlay_panel7.jpg&quot;:&quot;https://a0.muscache.com/airbnb/static/engagement/overlay_panel7-58b03c50e1eac957ec12f6ced3bf7872.jpg&quot;,&quot;engagement/overlay_panel8.jpg&quot;:&quot;https://a0.muscache.com/airbnb/static/engagement/overlay_panel8-b6915b7a14b1ce8d1081b078b867ea34.jpg&quot;,&quot;engagement/overlay_panel9.jpg&quot;:&quot;https://a1.muscache.com/airbnb/static/engagement/overlay_panel9-bbe13adcee0122f5325db135211af175.jpg&quot;,&quot;engagement/overlay_panel10.jpg&quot;:&quot;https://a0.muscache.com/airbnb/static/engagement/overlay_panel10-993449dfdae5ea316589c0a84558f2f6.jpg&quot;,&quot;magical_trips/guest/beta-badge.png&quot;:&quot;https://a0.muscache.com/airbnb/static/magical_trips/guest/beta-badge-56a0d5bc185adfe79992a46991964070.png&quot;,&quot;engagement/ModalPhotos_Horizontal/Bikes.jpg&quot;:&quot;https://a0.muscache.com/airbnb/static/engagement/ModalPhotos_Horizontal/Bikes-07f9c7e8a46c37d31435a3797fc6d59a.jpg&quot;,&quot;engagement/ModalPhotos_Horizontal/Cherries.jpg&quot;:&quot;https://a2.muscache.com/airbnb/static/engagement/ModalPhotos_Horizontal/Cherries-c3107359f006f445670493e45434fa9e.jpg&quot;,&quot;engagement/ModalPhotos_Horizontal/Listing.jpg&quot;:&quot;https://a1.muscache.com/airbnb/static/engagement/ModalPhotos_Horizontal/Listing-67cde6835b69d93b1d3984eb9f227928.jpg&quot;,&quot;engagement/ModalPhotos_Horizontal/Surf.jpg&quot;:&quot;https://a2.muscache.com/airbnb/static/engagement/ModalPhotos_Horizontal/Surf-2b8a0111c4e79b00da1c101d00fbb9fb.jpg&quot;,&quot;engagement/ModalPhotos_Vertical/Bikes.jpg&quot;:&quot;https://a2.muscache.com/airbnb/static/engagement/ModalPhotos_Vertical/Bikes-fdcf8bcfb1d22a91dbf88c315f07e3d0.jpg&quot;,&quot;engagement/ModalPhotos_Vertical/Cherries.jpg&quot;:&quot;https://a1.muscache.com/airbnb/static/engagement/ModalPhotos_Vertical/Cherries-aa16cab99cee827e6beb0518436dfd8f.jpg&quot;,&quot;engagement/ModalPhotos_Vertical/Listing.jpg&quot;:&quot;https://a2.muscache.com/airbnb/static/engagement/ModalPhotos_Vertical/Listing-1e948927c0e09cb34baf2333e540c48d.jpg&quot;,&quot;engagement/ModalPhotos_Vertical/Surf.jpg&quot;:&quot;https://a2.muscache.com/airbnb/static/engagement/ModalPhotos_Vertical/Surf-dfafeba46bace57b5adcdcaa5dd95017.jpg&quot;,&quot;account_activation/modal-booking-ready.png&quot;:&quot;https://a1.muscache.com/airbnb/static/account_activation/modal-booking-ready-811e8edb5f67e88df1e36e474d12153e.png&quot;,&quot;account_activation/welcome.jpg&quot;:&quot;https://a1.muscache.com/airbnb/static/account_activation/welcome-62b2f84cb13fd2c6f6eb1c904ab3d5c8.jpg&quot;,&quot;account_activation/success.jpg&quot;:&quot;https://a1.muscache.com/airbnb/static/account_activation/success-d838dc8bc3a8c165a048dbd20a90abdc.jpg&quot;,&quot;partners/concur_pre_link.png&quot;:&quot;https://a0.muscache.com/airbnb/static/partners/concur_pre_link-63058dcdce0a710086c79101b68e178c.png&quot;,&quot;reviews/doubleblind_rightillustration.png&quot;:&quot;https://a2.muscache.com/airbnb/static/reviews/doubleblind_rightillustration-8e169384eff29db31110ced1f920cff8.png&quot;,&quot;user_pic-225x225.png?v=2&quot;:&quot;https://a0.muscache.com/airbnb/static/user_pic-225x225.png?v=2&quot;,&quot;signinup/hello@2x.png&quot;:&quot;https://a0.muscache.com/airbnb/static/signinup/hello@2x-6755b9e17e788bf166f7a44d6e636238.png&quot;,&quot;signinup/google_icon_2x.png&quot;:&quot;https://a1.muscache.com/airbnb/static/signinup/google_icon_2x-745c2280e5004d4c90e3ca4e60e3f677.png&quot;}" id="_bootstrap-image_paths" />
+<meta content="{&quot;mario_copy_monorail_p3_modal&quot;:{&quot;parameters&quot;:{&quot;title&quot;:{&quot;type&quot;:&quot;translation&quot;,&quot;values&quot;:{&quot;variation0&quot;:{&quot;key_suffix&quot;:&quot;Welcome message same as earlier&quot;,&quot;default&quot;:&quot;Welcome to Airbnb&quot;,&quot;key&quot;:&quot;mario_copy_monorail_p3_modal.title.Welcome message same as earlier&quot;,&quot;type&quot;:&quot;multi_language&quot;},&quot;variation1&quot;:{&quot;key_suffix&quot;:&quot;Location based welcome message&quot;,&quot;default&quot;:&quot;Airbnb is pretty much everywhere&quot;,&quot;key&quot;:&quot;mario_copy_monorail_p3_modal.title.Location based welcome message&quot;,&quot;type&quot;:&quot;multi_language&quot;},&quot;variation2&quot;:{&quot;key_suffix&quot;:&quot;Price based welcome message&quot;,&quot;default&quot;:&quot;Great Airbnb homes at any price&quot;,&quot;key&quot;:&quot;mario_copy_monorail_p3_modal.title.Price based welcome message&quot;,&quot;type&quot;:&quot;multi_language&quot;},&quot;variation3&quot;:{&quot;key_suffix&quot;:&quot;Quality based welcome message&quot;,&quot;default&quot;:&quot;Have a five-star Airbnb experience&quot;,&quot;key&quot;:&quot;mario_copy_monorail_p3_modal.title.Quality based welcome message&quot;,&quot;type&quot;:&quot;multi_language&quot;}}},&quot;summary&quot;:{&quot;type&quot;:&quot;translation&quot;,&quot;values&quot;:{&quot;variation0&quot;:{&quot;key_suffix&quot;:&quot;Summary same as earlier&quot;,&quot;default&quot;:&quot;Choose from over two million unique homes for your next trip. Whether it’s with family, friends, or for work.&quot;,&quot;key&quot;:&quot;mario_copy_monorail_p3_modal.summary.Summary same as earlier&quot;,&quot;type&quot;:&quot;multi_language&quot;},&quot;variation1&quot;:{&quot;key_suffix&quot;:&quot;Summary based on Location&quot;,&quot;default&quot;:&quot;Search for 2 million homes in almost every city in the world. And since they’re spread all over, you can stay right where you want to be.&quot;,&quot;key&quot;:&quot;mario_copy_monorail_p3_modal.summary.Summary based on Location&quot;,&quot;type&quot;:&quot;multi_language&quot;},&quot;variation2&quot;:{&quot;key_suffix&quot;:&quot;Summary based on Price&quot;,&quot;default&quot;:&quot;Book places that fit any budget, from simple studios to luxury houses. And find homes with basics like WiFi and kitchens, at no extra cost.&quot;,&quot;key&quot;:&quot;mario_copy_monorail_p3_modal.summary.Summary based on Price&quot;,&quot;type&quot;:&quot;multi_language&quot;},&quot;variation3&quot;:{&quot;key_suffix&quot;:&quot;Summary based on Quality&quot;,&quot;default&quot;:&quot;Choose from thousands of spotless, well-designed homes—all with a touch of the host’s personality and local style.&quot;,&quot;key&quot;:&quot;mario_copy_monorail_p3_modal.summary.Summary based on Quality&quot;,&quot;type&quot;:&quot;multi_language&quot;}}}},&quot;schema_version&quot;:&quot;v2&quot;,&quot;strategies&quot;:{&quot;title&quot;:{&quot;default&quot;:{&quot;delivery_type&quot;:&quot;static&quot;,&quot;static&quot;:&quot;variation0&quot;,&quot;debug&quot;:&quot;variation0&quot;}},&quot;summary&quot;:{&quot;default&quot;:{&quot;delivery_type&quot;:&quot;static&quot;,&quot;static&quot;:&quot;variation0&quot;,&quot;debug&quot;:&quot;variation0&quot;}}}},&quot;mario_copy_monorail_referrals&quot;:{&quot;parameters&quot;:{&quot;tab_text&quot;:{&quot;type&quot;:&quot;translation&quot;,&quot;values&quot;:{&quot;variation0&quot;:{&quot;key_suffix&quot;:&quot;travel_credit&quot;,&quot;default&quot;:&quot;Travel Credit&quot;,&quot;key&quot;:&quot;mario_copy_monorail_referrals.tab_text.travel_credit&quot;,&quot;type&quot;:&quot;multi_language&quot;},&quot;variation1&quot;:{&quot;key_suffix&quot;:&quot;invite_friends&quot;,&quot;default&quot;:&quot;Invite Friends&quot;,&quot;key&quot;:&quot;mario_copy_monorail_referrals.tab_text.invite_friends&quot;,&quot;type&quot;:&quot;multi_language&quot;},&quot;variation2&quot;:{&quot;key_suffix&quot;:&quot;variation2&quot;,&quot;default&quot;:&quot;Refer A Friend&quot;,&quot;key&quot;:&quot;mario_copy_monorail_referrals.tab_text.variation2&quot;,&quot;type&quot;:&quot;multi_language&quot;},&quot;variation3&quot;:{&quot;key_suffix&quot;:&quot;variation3&quot;,&quot;default&quot;:&quot;Referrals&quot;,&quot;key&quot;:&quot;mario_copy_monorail_referrals.tab_text.variation3&quot;,&quot;type&quot;:&quot;multi_language&quot;}}},&quot;banner_body_text&quot;:{&quot;type&quot;:&quot;translation&quot;,&quot;values&quot;:{&quot;variation0&quot;:{&quot;key_suffix&quot;:&quot;variation0&quot;,&quot;default&quot;:&quot;Give your friends %{sign_up_credit} off their first trip on Airbnb and you’ll get up to %{total_credit} travel credit.&quot;,&quot;key&quot;:&quot;mario_copy_monorail_referrals.banner_body_text.variation0&quot;,&quot;type&quot;:&quot;multi_language&quot;}}}},&quot;schema_version&quot;:&quot;v2&quot;,&quot;strategies&quot;:{&quot;tab_text&quot;:{&quot;default&quot;:{&quot;delivery_type&quot;:&quot;erf&quot;,&quot;setup&quot;:&quot;monorail_referrals_tab_text_v3&quot;,&quot;treatment_unknown&quot;:&quot;variation0&quot;,&quot;control&quot;:&quot;variation0&quot;,&quot;treatment1_invite_friends&quot;:&quot;variation1&quot;,&quot;treatment2_refer_a_friend&quot;:&quot;variation2&quot;,&quot;treatment3_referrals&quot;:&quot;variation3&quot;}},&quot;banner_body_text&quot;:{&quot;default&quot;:{&quot;delivery_type&quot;:&quot;erf&quot;,&quot;setup&quot;:&quot;monorail_referrals_tab_text_v3&quot;,&quot;treatment_unknown&quot;:&quot;variation0&quot;,&quot;control&quot;:&quot;variation0&quot;,&quot;treatment1_invite_friends&quot;:&quot;variation0&quot;,&quot;treatment2_refer_a_friend&quot;:&quot;variation0&quot;,&quot;treatment3_referrals&quot;:&quot;variation0&quot;}}}}}" id="_bootstrap-mario_configs" />
+<script src="https://a0.muscache.com/airbnb/static/packages/libs_jquery.bundle-178911fd941baf9289ee.js" type="text/javascript"></script>
+
+
+<script src="https://a1.muscache.com/airbnb/static/packages/core.bundle-ae766f6bef0b07fac1ca.js" type="text/javascript"></script>
+
+
+
+
+
+    <div id="fb-root"></div>
+
+    
+    <script src="https://a0.muscache.com/airbnb/static/packages/mystique/invitation.bundle-55a258239ddc025dab74.js" type="text/javascript"></script>
+    
+
+  </body>
+</html>
+<!-- ver. 80380405874cf53a856d9e275e2c17d69b4fe93c -->
+
