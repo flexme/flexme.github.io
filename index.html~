@@ -15,5 +15,5 @@
 </head>
 
 <body>
-  <div style="display: none;"><img src="https://flexme.github.io/belo-400x400.png"/></div>
+  <div class="hide"><img src="https://flexme.github.io/belo-400x400.png"/></div>
 </body>
